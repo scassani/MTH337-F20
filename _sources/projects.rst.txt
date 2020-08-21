@@ -1,0 +1,10 @@
+
+Projects
+========
+
+The description of the class projects will be added on this page
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 2
+
