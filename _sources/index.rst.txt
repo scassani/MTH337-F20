@@ -30,7 +30,7 @@ Syllabus
 Distance Learning
 -----------------
 This class will be delivered with a distance learning technique. 
-We will use `Discord <http://www.discord.com>`_, `Piazza <http://piazza.com/buffalo/fall2020/mth337sc>`_ and `Gradescope <http://gradescope.com>`_ platforms. You will receive detailed information regarding these platforms via email, before the beginnig of the semester.
+We will use `Discord <http://www.discord.com>`_, `Piazza <http://piazza.com/buffalo/fall2020/mth337sc>`_ and `Gradescope <http://gradescope.com>`_ platforms. You will receive detailed information regarding these platforms via email, before the beginnig of the semester. 
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
 
