@@ -34,8 +34,8 @@ We will use `Discord <http://www.discord.com>`_, `Piazza <http://piazza.com/buff
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
 
-| **Class times:** MW 11:30 AM - 1:20 PM, online, on class Discord Server. 
-| A video of the lectures will be posted on UBLearns
+| **Class times:** MW 11:30 AM - 1:20 PM, online, on Zoom. 
+| A video of the lectures will be posted on UBLearns under the tab **Tools** > **Panopto Content**
 |
 
 
