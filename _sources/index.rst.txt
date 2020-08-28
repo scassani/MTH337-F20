@@ -34,7 +34,7 @@ We will use `Discord <http://www.discord.com>`_, `Piazza <http://piazza.com/buff
 
 | **MTH 337 Introduction to Scientific and Mathematical Computing**
 
-| **Class times:** MW 11:30 AM - 1:20 PM, online, on Zoom. 
+| **Class times:** MW 11:30 AM - 1:20 PM, online, Zoom meeting ID: 994 6702 5102. 
 | A video of the lectures will be posted on UBLearns under the tab **Tools** > **Panopto Content**
 |
 
@@ -125,7 +125,7 @@ The lowest quiz score will be dropped.
 **Class Participation.** This includes class attendance, asking and answering question in class
 and on `Piazza <http://piazza.com/buffalo/fall2020/mth337sc>`_ etc.
 
-
+While your attendance and participation are essential components of this course, it is critical that you follow public health guidelines. As such, any student exhibiting COVID-19 symptoms should not come to campus to participate in coursework.  If you need to miss class due to illness, isolation or quarantine must notify the instructor by email as soon as possible and no later than 24-hours after missing class.  At that time, you are also expected to make arrangements to complete missed work.
 
 Useful Information
 ------------------

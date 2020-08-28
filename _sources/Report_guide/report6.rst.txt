@@ -12,7 +12,7 @@ Overall, in this introduction there is no effort to present the topic of the rep
 .. raw:: html
 
    <a href = "../_static/report_guide/report_sample6a.html">
-   <img src="../_static/report_guide/report_sample6a.png" style="padding:1px; border:2px solid #C4C4C4; display: block;">
+   <img src="../_static/report_guide/report_sample6a.png" style="padding:1px; border:2px solid #C4C4C4; display: block;" width="850">
    </a>
 
 
@@ -22,5 +22,5 @@ Overall, in this introduction there is no effort to present the topic of the rep
 .. raw:: html
 
    <a href = "../_static/report_guide/report_sample6b.html">
-   <img src="../_static/report_guide/report_sample6b.png" style="padding:1px; border:2px solid #C4C4C4; display: block;">
+   <img src="../_static/report_guide/report_sample6b.png" style="padding:1px; border:2px solid #C4C4C4; display: block;" width="850">
    </a>

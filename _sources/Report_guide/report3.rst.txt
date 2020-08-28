@@ -9,7 +9,7 @@ and variable names are unnecessarily repeated in each row.
 .. raw:: html
 
    <a href = "../_static/report_guide/report_sample3a.html">
-   <img src="../_static/report_guide/report_sample3a.png" style="padding:1px; border:2px solid #C4C4C4; display: block;">
+   <img src="../_static/report_guide/report_sample3a.png" style="padding:1px; border:2px solid #C4C4C4; display: block;" width="850">
    </a>
 
 
@@ -19,7 +19,7 @@ and variable names are unnecessarily repeated in each row.
 .. raw:: html
 
    <a href = "../_static/report_guide/report_sample3b.html">
-   <img src="../_static/report_guide/report_sample3b.png" style="padding:1px; border:2px solid #C4C4C4; display: block;">
+   <img src="../_static/report_guide/report_sample3b.png" style="padding:1px; border:2px solid #C4C4C4; display: block;" width="850">
    </a>
 
 
