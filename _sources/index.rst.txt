@@ -46,7 +46,8 @@ Instructor
 | Simone Cassani
 | **Office:** 321 Mathematics Building
 | **E-mail:** `scassani@buffalo.edu <scassani@buffalo.edu>`_
-| **Office Hours:** R 10:30 AM-12:30 PM, online, on class Discord Server
+| **Office Hours:** R 10:30 AM-12:30 PM, online, on class Discord Server,
+|							and by appointment.
 |
 
 
@@ -132,11 +133,11 @@ Useful Information
 
 **Important Dates:**
 	
-   	* Aug. 31: first day of classes
+   * Aug. 31: first day of classes
    * Sept. 7: UB will be Holding Instruction on Labor Day
-	* Sept. 8: last day to drop/add
-	* Nov. 13: last day to resign
-	* Dec. 11: last day of classes
+   * Sept. 8: last day to drop/add
+   * Nov. 13: last day to resign
+   * Dec. 11: last day of classes
 
 **Academic Integrity.**
 Students must be familiar with and abide by the university’s policies and procedures on Academic Integrity, available at the following link: `Academic Integrity <https://catalog.buffalo.edu/policies/academic_integrity_2019-20.html>`_
