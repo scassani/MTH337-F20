@@ -2,9 +2,9 @@
 Projects
 ========
 
-The description of the class projects will be added on this page
 
 .. toctree::
    :titlesonly:
    :maxdepth: 2
 
+	A particular sequence <Projects/part_sequence/part_sequence>
