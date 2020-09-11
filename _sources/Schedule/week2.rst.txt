@@ -1,4 +1,4 @@
-Week 2: Feb 2-7
+Week 2: Sept 7-11
 ===================
 
 
@@ -10,19 +10,21 @@ Python
 * Fine-tuning loops: ``break`` and ``continue``
 * :doc:`Functions </PT/PT-functions>`
 * Logical operators: ``not``, ``and``, ``or``
+* The ``while`` loop
 
 
 Mathematics
 ~~~~~~~~~~~
 
-* Congruences
+* Divisors
+* Sequences
 
 Project 1
 ~~~~~~~~~
 
-Due: Friday, February 14, 8:00 AM.
+Due: Saturday, September 19, 8:00 AM.
 
-* :doc:`A Prime or Not a Prime </Projects/prime_or_not/prime_or_not>`.
+* :doc:`A particular sequence </Projects/part_sequence/part_sequence>`.
 
 
 
@@ -30,10 +32,10 @@ Due: Friday, February 14, 8:00 AM.
 Week 2 notebook
 ~~~~~~~~~~~~~~~
 
-- `View online <../_static/week2_in_class.html>`_
-- `Download  <../_static/week2_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
+- `View online <../_static/week02_in_class.html>`_
+- `Download  <../_static/week02_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
 
-Sample quiz 2
+Sample quiz 3
 ~~~~~~~~~~~~~
 
-- :download:`Sample Quiz 2 <../Quizzes/quiz2_sample.pdf>`
+- :download:`Sample Quiz 3 <../Quizzes/quiz3/quiz3_sample.pdf>`
