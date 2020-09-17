@@ -1,4 +1,4 @@
-Week 3: Feb 10 -14
+Week 3: Sept 14-18
 ===================
 
 
@@ -8,18 +8,27 @@ Python
 * ``while`` loops
 * Documenting code: comments and docstrings
 * :doc:`List indexing and slicing </PT/PT-lists>`
-* :doc:`Mutable and immutable objects </PT/PT-mutable_vs_immutable/PT-mutable_vs_immutable>`
-* :doc:`Functions: positional, keyword, and default arguments </PT/PT-functions>`
 * :doc:`Plotting with Matplotlib </PT/PT-matplotlib_plots/PT-matplotlib_plots>`
+
+
+
+Project 1
+~~~~~~~~~
+
+Due: Saturday, September 19, 8:00 AM.
+
+* :doc:`A particular sequence </Projects/part_sequence/part_sequence>`.
+
+
 
 
 Week 3 notebook
 ~~~~~~~~~~~~~~~
 
-- `View online <../_static/week3_in_class.html>`_
-- `Download  <../_static/week3_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
+- `View online <../_static/week03_in_class.html>`_
+- `Download  <../_static/week03_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
 
-Sample quiz 3
+Sample quiz 4
 ~~~~~~~~~~~~~
 
-- :download:`Sample Quiz 3 <../Quizzes/quiz3_sample.pdf>`
+- :download:`Sample Quiz 4 <../Quizzes/quiz4/quiz4_sample.pdf>`
