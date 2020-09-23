@@ -38,7 +38,7 @@ For example, if :math:`p=\dfrac{1}{2}`, then :math:`\sum_{n=1}^\infty \left(\dfr
 
 .. math:: \sum_{n=1}^\infty \dfrac{1}{n^p}=\zeta(p), \text{ for } p>1
 
-For example, if :math:`p=2`, then :math:`\sum_{n=1}^\infty \dfrac{1}{n^2}n=\zeta(2)\simeq 1.64493`
+For example, if :math:`p=2`, then :math:`\sum_{n=1}^\infty \dfrac{1}{n^2}=\zeta(2)\simeq 1.64493`
 
 Project
 -------
