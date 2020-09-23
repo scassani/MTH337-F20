@@ -8,3 +8,4 @@ Projects
    :maxdepth: 2
 
 	A particular sequence <Projects/part_sequence/part_sequence>
+	Is there room? <Projects/room/room>

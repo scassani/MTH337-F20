@@ -1,0 +1,1981 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Week 1 &#8212; MTH337_F20  documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../../../" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/language_data.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">MTH337_F20  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Week 1</a></li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Contents</h2>
+    <div class="sidebar-localtoc">
+      <ul>
+<li><a class="reference internal" href="#">Week 1</a></li>
+<li><a class="reference internal" href="#Header-for-project">Header for project</a><ul>
+<li><a class="reference internal" href="#Smaller-header">Smaller header</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Python-arithmetic">Python arithmetic</a></li>
+<li><a class="reference internal" href="#integers-vs-floats">integers vs floats</a></li>
+<li><a class="reference internal" href="#Assign-a-variable">Assign a variable</a></li>
+<li><a class="reference internal" href="#strings">strings</a></li>
+<li><a class="reference internal" href="#String-formatting">String formatting</a></li>
+<li><a class="reference internal" href="#LaTex-in-markdown">LaTex in markdown</a></li>
+<li><a class="reference internal" href="#Modules">Modules</a></li>
+<li><a class="reference internal" href="#Simplify-a-module-name">Simplify a module name</a><ul>
+<li><a class="reference internal" href="#Checking-if-a-given-number-n-is-divisible-by-d">Checking if a given number <code class="docutils literal notranslate"><span class="pre">n</span></code> is divisible by <code class="docutils literal notranslate"><span class="pre">d</span></code></a></li>
+<li><a class="reference internal" href="#Boolean-expressions">Boolean expressions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#if-statement"><code class="docutils literal notranslate"><span class="pre">if</span></code> statement</a><ul>
+<li><a class="reference internal" href="#for-loops-and-lists"><code class="docutils literal notranslate"><span class="pre">for</span></code> loops and <code class="docutils literal notranslate"><span class="pre">lists</span></code></a><ul>
+<li><a class="reference internal" href="#For-loops">For loops</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/MTH337-F20/MTH337-F20/MTH337-F20/MTH337-F20/_static/week01_in_class.ipynb.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../../../../../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../../../../../index.html">Docs</a></li>
+              
+              <li>Week 1</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput.container,
+div.nbinput.container div.prompt,
+div.nbinput.container div.input_area,
+div.nbinput.container div[class*=highlight],
+div.nbinput.container div[class*=highlight] pre,
+div.nboutput.container,
+div.nboutput.container div.prompt,
+div.nboutput.container div.output_area,
+div.nboutput.container div[class*=highlight],
+div.nboutput.container div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput.container div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput.container,
+div.nboutput.container {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput.container,
+    div.nboutput.container {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput.container {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast.container {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput.container div.prompt pre {
+    color: #307FC1;
+}
+
+/* output prompt */
+div.nboutput.container div.prompt pre {
+    color: #BF5B3D;
+}
+
+/* all prompts */
+div.nbinput.container div.prompt,
+div.nboutput.container div.prompt {
+    width: 4.5ex;
+    padding-top: 5px;
+    position: relative;
+    user-select: none;
+}
+
+div.nbinput.container div.prompt > div,
+div.nboutput.container div.prompt > div {
+    position: absolute;
+    right: 0;
+    margin-right: 0.3ex;
+}
+
+@media (max-width: 540px) {
+    div.nbinput.container div.prompt,
+    div.nboutput.container div.prompt {
+        width: unset;
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput.container div.prompt.empty {
+        padding: 0;
+    }
+
+    div.nbinput.container div.prompt > div,
+    div.nboutput.container div.prompt > div {
+        position: unset;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput.container div.prompt pre,
+div.nboutput.container div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput.container div.input_area,
+div.nboutput.container div.output_area {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput.container div.input_area,
+    div.nboutput.container div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput.container div.input_area {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    background: #f5f5f5;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput.container div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.imgmath center alignment in output cells */
+div.nboutput.container div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput.container div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+
+div.nbinput.container div.input_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight] > pre,
+div.nboutput.container div.output_area div[class*=highlight].math,
+div.nboutput.container div.output_area.rendered_html,
+div.nboutput.container div.output_area > div.output_javascript,
+div.nboutput.container div.output_area:not(.rendered_html) > img{
+    padding: 5px;
+}
+
+/* fix copybtn overflow problem in chromium (needed for 'sphinx_copybutton') */
+div.nbinput.container div.input_area > div[class^='highlight'],
+div.nboutput.container div.output_area > div[class^='highlight']{
+    overflow-y: hidden;
+}
+
+/* hide copybtn icon on prompts (needed for 'sphinx_copybutton') */
+.prompt a.copybtn {
+    display: none;
+}
+
+/* Some additional styling taken form the Jupyter notebook CSS */
+div.rendered_html table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: black;
+  font-size: 12px;
+  table-layout: fixed;
+}
+div.rendered_html thead {
+  border-bottom: 1px solid black;
+  vertical-align: bottom;
+}
+div.rendered_html tr,
+div.rendered_html th,
+div.rendered_html td {
+  text-align: right;
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: normal;
+  white-space: normal;
+  max-width: none;
+  border: none;
+}
+div.rendered_html th {
+  font-weight: bold;
+}
+div.rendered_html tbody tr:nth-child(odd) {
+  background: #f5f5f5;
+}
+div.rendered_html tbody tr:hover {
+  background: rgba(66, 165, 245, 0.2);
+}
+</style>
+<div class="section" id="Week-1">
+<h1>Week 1<a class="headerlink" href="#Week-1" title="Permalink to this headline">¶</a></h1>
+<p>Hello my name is Simone</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">hi</span> <span class="nb">all</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-1-f7617bf819bb&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    hi all</span>
+<span class="ansi-white-intense-fg ansi-bold">         ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">pwd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Header-for-project">
+<h1>Header for project<a class="headerlink" href="#Header-for-project" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Smaller-header">
+<h2>Smaller header<a class="headerlink" href="#Smaller-header" title="Permalink to this headline">¶</a></h2>
+<p>boldface <strong>bold</strong> or <strong>bold</strong></p>
+<p>italics <em>italics</em> or <em>italics</em></p>
+<p>to make a list you can use the <code class="docutils literal notranslate"><span class="pre">*</span></code></p>
+<ul class="simple">
+<li><p>first element</p></li>
+<li><p>second element</p>
+<ol class="arabic simple">
+<li><p>sub list</p></li>
+<li><p>sub list second piece</p></li>
+</ol>
+</li>
+</ul>
+<p>links/quotes “All truths are easy to understand once they are discovered; the point is to discover them.” from <a class="reference external" href="https://www.brainyquote.com/authors/galileo-galilei-quotes">here</a></p>
+</div>
+</div>
+<div class="section" id="Python-arithmetic">
+<h1>Python arithmetic<a class="headerlink" href="#Python-arithmetic" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">+</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+7
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">*</span><span class="mi">5</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+10
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">/</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.4
+</pre></div></div>
+</div>
+<p>integer division <code class="docutils literal notranslate"><span class="pre">//</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2.5
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">5</span><span class="o">//</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2
+</pre></div></div>
+</div>
+<p>modulus <code class="docutils literal notranslate"><span class="pre">%</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">5</span><span class="o">%</span><span class="k">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1
+</pre></div></div>
+</div>
+<p>exponentials <code class="docutils literal notranslate"><span class="pre">**</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">5</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+25
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="integers-vs-floats">
+<h1>integers vs floats<a class="headerlink" href="#integers-vs-floats" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">3</span><span class="o">**</span><span class="mi">50</span> <span class="c1"># integer</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+717897987691852588770249
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mf">3.0</span><span class="o">**</span><span class="mi">50</span> <span class="c1"># float</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+7.178979876918526e+23
+</pre></div></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">e+23</span></code> is equivalent to 10 to the power of 23</p>
+<ul class="simple">
+<li><p>integers are computed in exact arithmetic</p></li>
+<li><p>floats area approximated</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">9</span><span class="o">**</span><span class="mi">500</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1322070819480806636890455259752144365965422032752148167664920368226828597346704899540778313850608061963909777696872582355950954582100618911865342725257953674027620225198320803878014774228964841274390400117588618041128947815623094438061566173054086674490506178125480344405547054397038895817465368254916136220830268563778582290228416398307887896918556404084898937609373242171846359938695516765018940588109060426089671438864102814350385648747165832010614366132173102768902855220001
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mf">9.0</span><span class="o">**</span><span class="mi">500</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">OverflowError</span>                             Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-12-ce1f8918b6a7&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span><span class="ansi-cyan-intense-fg ansi-bold">9.0</span><span class="ansi-yellow-intense-fg ansi-bold">**</span><span class="ansi-cyan-intense-fg ansi-bold">500</span>
+
+<span class="ansi-red-intense-fg ansi-bold">OverflowError</span>: (34, &#39;Result too large&#39;)
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">float</span><span class="p">(</span><span class="mi">356</span><span class="p">)</span> <span class="c1"># the function float changes the given number to a float</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+356.0
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">int</span><span class="p">(</span><span class="mf">22.56</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+22
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">round</span><span class="p">(</span><span class="mf">22.56</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+23
+</pre></div></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">round()</span></code> function rounds a number</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">help</span><span class="p">(</span><span class="nb">round</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Help on built-in function round in module builtins:
+
+round(number, ndigits=None)
+    Round a number to a given precision in decimal digits.
+
+    The return value is an integer if ndigits is omitted or None.  Otherwise
+    the return value has the same type as the number.  ndigits may be negative.
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">round</span><span class="p">(</span><span class="mf">22.56</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+22.6
+</pre></div></div>
+</div>
+<p>the <code class="docutils literal notranslate"><span class="pre">print</span></code> function is used to print to screen (displays the output for human consumption)</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="mf">22.56</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+22
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">22</span><span class="o">+</span><span class="mi">3</span>
+<span class="mi">3</span><span class="o">-</span><span class="mi">7</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+-4
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Assign-a-variable">
+<h1>Assign a variable<a class="headerlink" href="#Assign-a-variable" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">34</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">72</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+34
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+106
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">c</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+34 72 106
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mf">34.0</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+36.0
+</pre></div></div>
+</div>
+<p>shortcut (it works with <code class="docutils literal notranslate"><span class="pre">+=</span></code>, <code class="docutils literal notranslate"><span class="pre">-=</span></code>, …)</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">+=</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+38.0
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">b</span><span class="o">/=</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+24.0
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="strings">
+<h1>strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mystr1</span><span class="o">=</span><span class="s1">&#39;Hello&#39;</span>
+<span class="n">mystr2</span><span class="o">=</span><span class="s1">&#39;welcome to 337!&#39;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">mystr1</span><span class="o">+</span><span class="n">mystr2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Hellowelcome to 337!
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">mystr1</span><span class="o">+</span><span class="s1">&#39; &#39;</span><span class="o">+</span><span class="n">mystr2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Hello welcome to 337!
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">*</span><span class="n">mystr1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+HelloHelloHello
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="s1">&#39;220&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+220
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;220&#39;
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+str
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+220
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">type</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+int
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">str</span><span class="p">(</span><span class="mi">34</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;34&#39;
+</pre></div></div>
+</div>
+<p><strong>Ex.</strong> define the variables <code class="docutils literal notranslate"><span class="pre">a='200'</span></code>, and <code class="docutils literal notranslate"><span class="pre">b='100'</span></code>. Then using only the variables <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code>, produce the variable <code class="docutils literal notranslate"><span class="pre">c='200200100'</span></code> and <code class="docutils literal notranslate"><span class="pre">d=500</span></code> (<code class="docutils literal notranslate"><span class="pre">d</span></code> is integer)</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;200&quot;</span> <span class="c1"># or a=&#39;200&#39;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;100&quot;</span>
+<span class="n">c</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="c1"># creating a string which uses `a` and `b`</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="c1"># create 500 using only `a` and `b`</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+200200100
+500
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="String-formatting">
+<h1>String formatting<a class="headerlink" href="#String-formatting" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">22</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">45</span>
+
+<span class="n">s</span><span class="o">=</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> plus </span><span class="si">{b}</span><span class="s1"> is equal to {a+b}&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+22 plus 45 is equal to 67
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="LaTex-in-markdown">
+<h1>LaTex in markdown<a class="headerlink" href="#LaTex-in-markdown" title="Permalink to this headline">¶</a></h1>
+<p>using the <code class="docutils literal notranslate"><span class="pre">$</span></code> you can write math formulas using LaTex</p>
+<p>LaTex is very good to embed formulas in your notebook</p>
+<ul>
+<li><p>inline formulas <span class="math notranslate nohighlight">\(\int x dx = \frac{1}{2} x^2 + C\)</span></p></li>
+<li><p>display formulas (<code class="docutils literal notranslate"><span class="pre">$$</span></code>)</p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=1}^\infty \frac{1}{2^n} = 1\]</div>
+</li>
+</ul>
+<p><strong>superscript</strong> and <strong>subscripts</strong> <span class="math notranslate nohighlight">\(y^2\)</span> and <span class="math notranslate nohighlight">\(a_2\)</span></p>
+<p>curly brackets <code class="docutils literal notranslate"><span class="pre">\{</span></code> <span class="math notranslate nohighlight">\(a_n=\{3n+2\}_{n=1}^\infty\)</span></p>
+<p>spacing <code class="docutils literal notranslate"><span class="pre">\</span></code> or <code class="docutils literal notranslate"><span class="pre">\,</span></code>: <span class="math notranslate nohighlight">\(\int x\, dx = \frac{1}{2} x^2 + C\)</span></p>
+<p>fraction <code class="docutils literal notranslate"><span class="pre">\frac{num}{den}</span></code>: <span class="math notranslate nohighlight">\(\frac{a_n}{3^n + 75}\)</span></p>
+<p>change the size of parenthesis and brackets using <code class="docutils literal notranslate"><span class="pre">\left</span></code> and <code class="docutils literal notranslate"><span class="pre">\right</span></code></p>
+<div class="math notranslate nohighlight">
+\[\left( \frac{a_n}{3^n + 75} \right)\]</div>
+<p><span class="math notranslate nohighlight">\(a_n=\left\{\frac{a_n}{3^n + 75}\right\}_{n=1}^\infty\)</span></p>
+<p>Roots <code class="docutils literal notranslate"><span class="pre">\sqrt[]{}</span></code> <span class="math notranslate nohighlight">\(\sqrt{3}\)</span> or <span class="math notranslate nohighlight">\(\sqrt[3]{4}\)</span></p>
+<p>Greek letters <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\Gamma\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span></p>
+</div>
+<div class="section" id="Modules">
+<h1>Modules<a class="headerlink" href="#Modules" title="Permalink to this headline">¶</a></h1>
+<p>Compute the sin of <code class="docutils literal notranslate"><span class="pre">0</span></code> rad</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-41-afbcc558f753&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span><span class="ansi-yellow-intense-fg ansi-bold"> </span>sin<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;sin&#39; is not defined
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">math</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;__doc__&#39;, &#39;__loader__&#39;, &#39;__name__&#39;, &#39;__package__&#39;, &#39;__spec__&#39;, &#39;acos&#39;, &#39;acosh&#39;, &#39;asin&#39;, &#39;asinh&#39;, &#39;atan&#39;, &#39;atan2&#39;, &#39;atanh&#39;, &#39;ceil&#39;, &#39;copysign&#39;, &#39;cos&#39;, &#39;cosh&#39;, &#39;degrees&#39;, &#39;e&#39;, &#39;erf&#39;, &#39;erfc&#39;, &#39;exp&#39;, &#39;expm1&#39;, &#39;fabs&#39;, &#39;factorial&#39;, &#39;floor&#39;, &#39;fmod&#39;, &#39;frexp&#39;, &#39;fsum&#39;, &#39;gamma&#39;, &#39;gcd&#39;, &#39;hypot&#39;, &#39;inf&#39;, &#39;isclose&#39;, &#39;isfinite&#39;, &#39;isinf&#39;, &#39;isnan&#39;, &#39;ldexp&#39;, &#39;lgamma&#39;, &#39;log&#39;, &#39;log10&#39;, &#39;log1p&#39;, &#39;log2&#39;, &#39;modf&#39;, &#39;nan&#39;, &#39;pi&#39;, &#39;pow&#39;, &#39;radians&#39;, &#39;remainder&#39;, &#39;sin&#39;, &#39;sinh&#39;, &#39;sqrt&#39;, &#39;tan&#39;, &#39;tanh&#39;, &#39;tau&#39;, &#39;trunc&#39;]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># how to tell python that we want to use sin from the math module</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[46]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+0.0
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[47]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Help on built-in function log in module math:
+
+log(...)
+    log(x, [base=math.e])
+    Return the logarithm of x to the given base.
+
+    If the base not specified, returns the natural logarithm (base e) of x.
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[48]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">help</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Help on built-in function remainder in module math:
+
+remainder(x, y, /)
+    Difference between x and the closest integer multiple of y.
+
+    Return x - n*y where n*y is the closest integer multiple of y.
+    In the case where x is exactly halfway between two multiples of
+    y, the nearest even value of n is used. The result is always exact.
+
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">math</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2.0
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[51]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3.141592653589793
+</pre></div></div>
+</div>
+</div>
+<div class="section" id="Simplify-a-module-name">
+<h1>Simplify a module name<a class="headerlink" href="#Simplify-a-module-name" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Nickname</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">math</span> <span class="k">as</span> <span class="nn">m</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">m</span><span class="o">.</span><span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[53]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2.0
+</pre></div></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Import some specif content only</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">pi</span><span class="p">,</span><span class="n">cos</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[55]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1.0
+</pre></div></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Import all of the content</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[56]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span> <span class="c1"># `*` stands for all</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">remainder</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[57]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2.0
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">sqrt</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1.7320508075688772
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[61]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">e</span><span class="o">=</span><span class="mi">34</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+34
+2.718281828459045
+</pre></div></div>
+</div>
+<p>Be careful when using <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">*</span></code></p>
+<p><strong>Ex.</strong> importing only the minimum number of components necessary from the <code class="docutils literal notranslate"><span class="pre">math</span></code> module, compute <span class="math notranslate nohighlight">\(\sin\left(\frac{\pi}{8}\right)\)</span>, <span class="math notranslate nohighlight">\(\cos\left(\frac{\pi}{8}\right)\)</span>, and check that <span class="math notranslate nohighlight">\(\sin^2\left(\frac{\pi}{8}\right)+\cos^2\left(\frac{\pi}{8}\right)=1\)</span></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[66]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span><span class="n">sin</span><span class="p">,</span><span class="n">cos</span>
+
+<span class="n">number_1</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">number_2</span> <span class="o">=</span> <span class="n">cos</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;sine of pi/8 is: </span><span class="si">{number_1}</span><span class="s1">&#39;</span><span class="p">,</span><span class="n">number_2</span><span class="p">,</span><span class="n">number_1</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">number_2</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+sine of pi/8 is: 0.3826834323650898 0.9238795325112867 1.0
+</pre></div></div>
+</div>
+<div class="section" id="Checking-if-a-given-number-n-is-divisible-by-d">
+<h2>Checking if a given number <code class="docutils literal notranslate"><span class="pre">n</span></code> is divisible by <code class="docutils literal notranslate"><span class="pre">d</span></code><a class="headerlink" href="#Checking-if-a-given-number-n-is-divisible-by-d" title="Permalink to this headline">¶</a></h2>
+<p>Given a number <code class="docutils literal notranslate"><span class="pre">n</span></code> we want to find all divisors <span class="math notranslate nohighlight">\(\leq n\)</span></p>
+<p>Steps: * Given <code class="docutils literal notranslate"><span class="pre">n</span></code> we need all numbers less than <code class="docutils literal notranslate"><span class="pre">n</span></code> * If <code class="docutils literal notranslate"><span class="pre">d</span></code> divides <code class="docutils literal notranslate"><span class="pre">n</span></code> we store it somewhere * repeat this up to <code class="docutils literal notranslate"><span class="pre">n</span></code> (loop)</p>
+</div>
+<div class="section" id="Boolean-expressions">
+<h2>Boolean expressions<a class="headerlink" href="#Boolean-expressions" title="Permalink to this headline">¶</a></h2>
+<p>boolean value <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+<p>Equality (<code class="docutils literal notranslate"><span class="pre">==</span></code>)</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">==</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[67]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<p>Inequality <code class="docutils literal notranslate"><span class="pre">!=</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span><span class="o">!=</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[70]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="s1">&#39;hello&#39;</span><span class="o">!=</span> <span class="s1">&#39;he&#39;</span><span class="o">+</span><span class="s1">&#39;llo&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<p>Comparison test</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">4</span><span class="o">&lt;</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[72]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">4</span><span class="o">&lt;=</span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">3</span><span class="o">&lt;=</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[74]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<p>To check divisibility we check that <code class="docutils literal notranslate"><span class="pre">n%d</span></code> is zero</p>
+</div>
+</div>
+<div class="section" id="if-statement">
+<h1><code class="docutils literal notranslate"><span class="pre">if</span></code> statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[75]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">3</span>
+
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is small&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3 is small
+</pre></div></div>
+</div>
+<p>syntax:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="o">&lt;</span><span class="n">boolean</span> <span class="n">statement</span><span class="o">&gt;</span><span class="p">:</span>
+        <span class="o">&lt;</span><span class="n">code</span> <span class="n">to</span> <span class="n">be</span> <span class="n">executed</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[76]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">12</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is small&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1"># to give an instruction of the boolean expression is False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is big&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+12 is big
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[78]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">10</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is small&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">10</span><span class="p">:</span> <span class="c1"># alternative instruction of the second boolean is True</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is exactly 10&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1"># to give an instruction of the boolean expression is False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is big&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+10 is exactly 10
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[81]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">3</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span> <span class="c1"># not a very smart `if statement`</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is very small&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">100</span><span class="p">:</span> <span class="c1"># alternative instruction of the second boolean is True</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is small&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1"># to give an instruction of the boolean expression is False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is big&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3 is very small
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[85]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">a</span><span class="o">=</span><span class="mi">10</span>
+<span class="k">if</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">100</span> <span class="ow">and</span> <span class="n">a</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is small&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">&lt;</span><span class="mi">10</span><span class="p">:</span> <span class="c1"># alternative instruction of the second boolean is True</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is very small&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">a</span><span class="o">==</span><span class="mi">100</span> <span class="ow">or</span> <span class="n">a</span><span class="o">==</span><span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is a power of 10&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="c1"># to give an instruction of the boolean expression is False</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{a}</span><span class="s1"> is big&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+10 is a power of 10
+</pre></div></div>
+</div>
+<p><strong>Ex.</strong> write some code that would check if a given number <code class="docutils literal notranslate"><span class="pre">n</span></code> is divisible by <code class="docutils literal notranslate"><span class="pre">d</span></code></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[86]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">n</span><span class="o">=</span><span class="mi">3478</span>
+<span class="n">d</span><span class="o">=</span><span class="mi">17</span>
+
+<span class="k">if</span> <span class="n">n</span><span class="o">%</span><span class="k">d</span> == 0: # to check if remainder is zero
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{n}</span><span class="s1"> is divisible by </span><span class="si">{d}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">n</span><span class="o">%</span><span class="k">d</span> != 0:
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{n}</span><span class="s1"> is not divisible by </span><span class="si">{d}</span><span class="s1">&#39;</span><span class="p">)</span>
+
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+3478 is not divisible by 17
+</pre></div></div>
+</div>
+<div class="section" id="for-loops-and-lists">
+<h2><code class="docutils literal notranslate"><span class="pre">for</span></code> loops and <code class="docutils literal notranslate"><span class="pre">lists</span></code><a class="headerlink" href="#for-loops-and-lists" title="Permalink to this headline">¶</a></h2>
+<p><strong>List</strong> is created using <code class="docutils literal notranslate"><span class="pre">[]</span></code>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[103]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mylist1</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># collection of objects</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[1, 2, 3, 4, 5]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[104]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mylist2</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="s1">&#39;ciao&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mylist2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;hello&#39;, 1, &#39;ciao&#39;]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[105]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">mylist1</span><span class="o">+</span><span class="n">mylist2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[1, 2, 3, 4, 5, &#39;hello&#39;, 1, &#39;ciao&#39;]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[106]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">mylist1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+</pre></div></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">append()</span></code> will add an element to the end of a list (without creating a new one)</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[107]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">mylist1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[108]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">print</span><span class="p">(</span><span class="n">mylist1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[1, 2, 3, 4, 5, 6]
+</pre></div></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">in</span></code> to check if one element is in the list</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">2</span> <span class="ow">in</span> <span class="n">mylist1</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[109]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+True
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="mi">8</span> <span class="ow">in</span> <span class="n">mylist1</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[110]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+False
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="nb">len</span><span class="p">(</span><span class="n">mylist1</span><span class="p">)</span> <span class="c1"># to check how many elements are in the list</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[111]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+6
+</pre></div></div>
+</div>
+<div class="section" id="For-loops">
+<h3>For loops<a class="headerlink" href="#For-loops" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[112]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">mylist1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+1
+2
+3
+4
+5
+6
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[113]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="s1">&#39;SUNY Buffalo&#39;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+S
+U
+N
+Y
+
+B
+u
+f
+f
+a
+l
+o
+</pre></div></div>
+</div>
+<p><strong>Ex.</strong>: write the code that will print only the vowels of the string ‘suny buffalo’</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../../../../index.html">MTH337_F20  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Week 1</a></li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../../../../../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2020, Simone Cassani. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
