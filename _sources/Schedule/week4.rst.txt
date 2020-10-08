@@ -25,7 +25,7 @@ Week 4 notebook
 - `View online <../_static/week04_in_class.html>`_
 - `Download  <../_static/week04_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
 
-Sample quiz 4
+Sample quiz 5
 ~~~~~~~~~~~~~
 
 - :download:`Sample Quiz 5 <../Quizzes/quiz5/quiz5_sample.pdf>`

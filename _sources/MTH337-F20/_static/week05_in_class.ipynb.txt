@@ -1,0 +1,452 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Week 5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Q3) Suppose the list `plist` contains the first 500 prime numbers. Using list comprehension produce the\n",
+    "list `mylist` of the numbers in `plist` smaller than 300 that are odd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "plist=[1,2,3,4,5,345]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 3, 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "mylist = [k for k in plist if ((k < 300) and (k%2!=0))]\n",
+    "print(mylist)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Q6) Define a function that can be called with one or two arguments. If called with two arguments it\n",
+    "returns the difference of the first minus the second one. If called with one argument it returns the\n",
+    "argument itself"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def f(a,b=0):\n",
+    "    return a-b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-3"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f(4,7)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f(4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "f(3,-5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Q2) Suppose the list `plist` contains the first 500 prime numbers. Using list comprehension produce the\n",
+    "list `loglist` of the logarithm of the numbers in `plist`\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0.0, 0.6931471805599453, 1.0986122886681098, 1.3862943611198906, 1.6094379124341003, 5.84354441703136]\n"
+     ]
+    }
+   ],
+   "source": [
+    "from math import log\n",
+    "\n",
+    "loglist=[log(x) for x in plist]\n",
+    "print(loglist)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4.127134385045092"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import math as m\n",
+    "m.log(62)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Q4) Write code that creates a plot of the function\n",
+    "\n",
+    "$f(x) = x^2 +1$ for $0\\leq x\\leq 1$\n",
+    "\n",
+    "Use at least 100 points\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0] \n",
+      " [1.0, 1.01, 1.04, 1.09, 1.1600000000000001, 1.25, 1.3599999999999999, 1.49, 1.6400000000000001, 1.81, 2.0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import matplotlib.pyplot as plt\n",
+    "n=10\n",
+    "x=[k/n for k in range(n+1)]\n",
+    "y=[k**2+1 for k in x]\n",
+    "print(x,'\\n',y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0] \n",
+      "\n",
+      " [1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0]\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q5\n",
+    "n=10\n",
+    "x=[k/n+1 for k in range(n+1)]\n",
+    "x1=[x/n for x in range(n,2*n+1)]\n",
+    "\n",
+    "print(x,'\\n\\n',x1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "You should all have `find_radii_p(k,p)`, `find_radii_g(k,p)` returning a list of `k` radii (small circles) and radius of the big circle"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'find_radii_p' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-22-abb941beed01>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0mfind_radii_p\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;31m## p-series, with p =2\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m: name 'find_radii_p' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "find_radii_p(3,2) ## p-series, with p =2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'find_radii_g' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-25-9481248613ae>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0mfind_radii_g\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;36m3\u001b[0m\u001b[1;33m,\u001b[0m\u001b[1;36m1\u001b[0m\u001b[1;33m/\u001b[0m\u001b[1;36m2\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;31m## geometric series, with p=2\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m: name 'find_radii_g' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "find_radii_g(3,1/2) ## geometric series, with p=2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import math as m\n",
+    "A=1\n",
+    "R=m.sqrt(A/m.pi) # radius of big circle (centered at origin)\n",
+    "r=[0.3989422804014327, 0.28209479177387814, 0.19947114020071635]\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## To plot circles:"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Want to place the small circles in the picture, with no constraint on location yet\n",
+    "1. pick random x coordinate\n",
+    "2. pick random y coordinate\n",
+    "3. place circle in the plot"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import matplotlib.pyplot as plt\n",
+    "from matplotlib.patches import Circle\n",
+    "import matplotlib.cm as cm # color maps\n",
+    "import random"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.358420992574899"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "random.random() # we get a random number in [0,1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "image/png": "iVBORw0KGgoAAAANSUhEUgAAAXwAAAD4CAYAAADvsV2wAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADh0RVh0U29mdHdhcmUAbWF0cGxvdGxpYiB2ZXJzaW9uMy4xLjMsIGh0dHA6Ly9tYXRwbG90bGliLm9yZy+AADFEAAAgAElEQVR4nO3deXyU9b33/9cne0hYAoQdQTAoWxVMQVxRVhECVm2x9+kR69Kjx7v3se3psT/99Zy79a722GrvcyptFTdaW3BhCYqgLFWoggQQ2UPYJBBCgJB9m8z3/iPBxjAkM5lr5nvNzOf5eOSRmcw11/XO5MpnvvO9ruv7FWMMSimlol+c7QBKKaXCQwu+UkrFCC34SikVI7TgK6VUjNCCr5RSMSLBdoCL6dmzpxk8eLDtGEopFVG2bt162hiT6esx1xb8wYMHk5eXZzuGUkpFFBE5erHHtEtHKaVihBZ8pZSKEVrwlVIqRmjBV0qpGKEFXymlYoQjBV9EpovIfhEpEJHHfDx+iYisF5HtIvK5iMxwYrtKKaX8F3TBF5F44HngVmAEcLeIjGi12BPAG8aYMcBcYH6w21VKKRUYJ1r444ACY8whY0w9sAiY3WoZA3Rpvt0VOOHAdpVSSgXAiQuv+gPHWtwvBMa3WuY/gPdF5H8CacBkXysSkQeBBwEuueQSB6KpSFZVU0/+0VMUFp+jpLSSM+eqOH2uiqqaehobvQAkJMSRnppMj25pZGak06NbGoP6ZpB1SSYpyYmWfwOl3MWJgi8+ftZ6VpW7gVeNMb8WkQnAH0VklDHG+5UnGfMC8AJAdna2zswSY06XVrLxs0Ns21vI/sPFfHGylI7OzxMfJwzu153LL+3N1cMHcv2YIXTtnOpsYKUijBMFvxAY2OL+AC7ssrkPmA5gjPlERFKAnsApB7avItjJ0+W897e9bNhawN7DxR0u8K01eg0HC89wsPAMKzfsIT5OGHVZP27MHsr064bTo2uaMxtSKoI4UfC3AFkicilwnKaDst9utcwXwCTgVREZDqQAJQ5sW0UgYwybPj/C22t28PFnh/GGYZrNRq9hR/5xduQf53eLNzLx61ncOflKrrpiQMi3rZRbBF3wjTEeEXkEWA3EAy8bY3aLyM+APGNMLvBD4EUReZSm7p55RifTjTnGGNZuzufFtz/maFGptRyeRi9rNu1nzab9DBvUi3/65nVce+Wl1vIoFS7i1rqbnZ1tdLTM6LF551F+98ZG9h0uth3FpzFXDOCf517PqMv62Y6iVFBEZKsxJtvnY1rwVSidKavimVfX8tctBbaj+GXWTSP5X/9jIumdkm1HUapD2ir4rh0PX0W+9z/ex68XrqOsstZ2FL+t+HA3m3ce5bH7pmg3j4o6WvCV42rrGvg/L77PB5v2247SIafOVvKDZ5Zyx+QrefQfJpKQEG87klKO0IKvHHXydDk/fm45+Ucj/ySst9fs4PDxM/zi+7Popufwqyigo2Uqx+zIP869P/1zVBT787btLeTen75OwbHo+Z1U7NKCrxyx6fMjfP/ptyktr7YdxXFFJeU8/OQb7D5YZDuKUkHRgq+CtunzI/z4ueXU1XtsRwmZ8qo6vv/021r0VUTTgq+CsnXPMf7tN7nUNzTajhJyVTX1/Msvl3AgirqsVGzRgq867NjJUn7yXyuiumXfWkV1HT96dhlny6Kv60pFPy34qkOqaur58XO5lEfQOfZOKT5TwWP/N5cGT/R/qlHRRQu+Cpgxhn+fv5LDx8/YjmLN5/kneObVtbZjKBUQLfgqYG998Bkbtx+yHcO63L/uYt2n+bZjKOU3LfgqIMdPnWP+4o22Y7jGM6+u41xFje0YSvlFC77ymzGGJ194n5q6BttRXKO0vJpfvbbOdgyl/KIFX/lt5YY9bN9XaDuG66zZtJ9Nnx+xHUOpdmnBV36pb/Dw4tsf247hWvMXb8StQ40rdZ4WfOWXt9fs4OSZCtsxXCv/6CnWROjooCp2aMFX7aquree13E9tx3C9P7z5Nxq9XtsxlLooLfiqXSs37NEzUfxQeKqMDVsP2o6h1EVpwVftWrp2h+0IEeNtfa2UizlS8EVkuojsF5ECEXnsIst8U0T2iMhuEfmzE9tVobd9XyEHC2P3itpA5e3+gi+KSm3HUMqnoAu+iMQDzwO3AiOAu0VkRKtlsoCfANcZY0YC/xLsdlV4LF+/03aEiGIMLP+rvmbKnZxo4Y8DCowxh4wx9cAiYHarZR4AnjfGlAIYY045sF0VYp5GLx9/pkMoBOqjrQW2IyjlkxMFvz9wrMX9wuaftTQMGCYifxORTSIy3deKRORBEckTkbySEh1z3LYd+49TXlVnO0bEOXbyHEdPnLUdQ6kLOFHwxcfPWl+BkgBkAROBu4EFItLtgicZ84IxJtsYk52ZmelANBWMDdv0jJOO0tdOuZETBb8QGNji/gDghI9llhtjGowxh4H9NL0BKBfbsuuo7QgR69NdX9iOoNQFnCj4W4AsEblURJKAuUBuq2WWATcDiEhPmrp4tHPYxWrrGjii3RIdtu9Ise0ISl0g6IJvjPEAjwCrgb3AG8aY3SLyMxHJaV5sNXBGRPYA64F/NcbouX4uln+0hEavjg3TUeWVtZw4VWY7hlJfkeDESowxK4GVrX720xa3DfCD5i8VAfYePmk7QsTbe7iYfr262o6h1Jf0Slvlk3bnBC+Wp4BU7qQFX/l0urTKdoSId+acvobKXbTgK5/OnKu0HSHindaCr1xGC77yqURb+EE7XapvmspdtOArnyqqa21HiHgVVfoaKnfRgq988nh0Io9geRr1NVTuogVfXWDz5s14Gj22Y0Q8r85xq1xGC7760qeffsott9zCNddcg9fTaDtOxEuIj7cdQamv0IKv2LdvH3fccQfjx49n/fr1ADR66i2ninwpyY5c16iUY7Tgx7DCwkLuv/9+Ro0axZIlS77yWENtuaVU0aNHtzTbEZT6Cm2CxKDy8nKefPJJ/vu//5vaWt9nkjTUlEO3vmFOFl0yu6XbjqDUV2jBjzGrVq3igQceoLCwsM3l6mu0hR8sbeErt9EunRhRXl7O/fffz6233tpusQeoq9SxdILVL1MHTlPuoi38GLB69WoeeOABjh071v7CzarOtv+moNp2xaW9bEdQ6iu0hR/Fzrfqp0+fHlCxBy34wfI2evjFv/8bpaWltqMo9SUt+FFq27ZtjB49mpdeeqlDz2+oKae+Wifw6Kiac0X86U8LGTVqFJs3b7YdRylAC35UWrx4Mddffz1ffBHcvKoVJYcdShR7zr92J06c4KabbmLhwoWWEymlBT+qGGN4/PHHmTt3LjU1NUGv79zxPQ6kik2lLV67uro67rnnHn74wx/S2KhXMCt7tOBHiYqKCubMmcMvfvELx9ZZenwPxqsFKlCe+hoqig9e8PNnn32WmTNncu7cOQuplNKCHxUOHTrEhAkTyM3NdXS9jfU1VJQccXSdsaCsaD/G+B4pc9WqVYwfP579+/eHOZVSDhV8EZkuIvtFpEBEHmtjuTtFxIhIthPbVU0Dno0bN47du3eHZP2nD28NyXqj2enDeW0+np+fz/jx49mwYUOYEinVJOiCLyLxwPPArcAI4G4RGeFjuc7A9wE9ZcEhGzduZPLkyZw5E7rJss8c2YanPvjjAbGitvIM547va3e5srIypk+fztq1a8OQSqkmTrTwxwEFxphDxph6YBEw28dyPwf+E9BpgBywbt06pk+fTkVFRUi3421s4PShLSHdRjQ5dWAT4N84+NXV1cycOZP33nsvtKGUauZEwe8PtLyqp7D5Z18SkTHAQGPMO22tSEQeFJE8EckrKSlxIFp0WrduHTNnzqSqKjzzzhbnf4zx6uxN7fF6Gig5GNgH2NraWubMmcPKlStDlEqpv3Oi4IuPn33ZxBGROOA54IftrcgY84IxJtsYk52ZmelAtOizceNGcnJyHDnt0l+1FSWcObo9bNuLVCfzN+KpC/xNuL6+njvuuEO7d1TIOVHwC4GBLe4PAE60uN8ZGAX8VUSOANcAuXrgNnCbN29mxowZYWvZt1S4YxVenfbwojz1NZzY3fGCXVtbS05Ojh7IVSHlRMHfAmSJyKUikgTMBb48P9AYU2aM6WmMGWyMGQxsAnKMMW2fyqC+4tChQ8yYMSPkffYXU1d1llMHPrGy7UhQtGcdjUEe3D7fp79vX/sHfZXqiKALvjHGAzwCrAb2Am8YY3aLyM9EJCfY9aumi6pycnI4e9bukMXHd31AQ62dNxw3a4zzUpPgzLkI5eXl5OTk6MVZKiTEGP/OKAi37Oxsk5enHwK8Xi9z5sxhxYoVtqMA0P2Sr5F1wz22Y7iGAWoyoTFFqDy8nxPvLcZTHnyxnjp1KitXriReJ0JXARKRrcYYn13meqWtyz3xxBOuKfYAZ7/4nDNHP7MdwzUa0puKPUD6pZcz9L4f0+2qCUGv9/333+dHP/pR0OtRqiVt4bvYokWLuPvuu23HuEBCchqjZ/yQpE6xPaNTYwJU9wbiLjxRrfLwfk68uwhPZXBDTL/88svce++9Qa0jUpSWVpF/4CQFBcWcK6umvr6RhgYPCQnxJCXGk5aWzJAhvRiW1Ye+fbvZjutabbXwteC71NatW7nhhhvCevplINJ6XMKIKQ8TF59oO4oVRqCqN5hEX2clN2moLKdwySvUnDja4e0kJSWxfv16rr322g6vw60KC8+y/sO95OefJP/ASUpK/D8+1KVzCllZfcjK6sO111zGqFEDQpg0smjBjzBlZWWMHj064Fmqwq33iBsZPMbXRdXRzQA1PaEx9eLF/jyvp4Gi1W9RtrPjVyv36dOHXbt20aNHjw6vwy0aG718sqmA5bnb2Lb9CE6VnyFDMpk9ayyTJ40kNTXJmZVGKC34Eea73/0ur7zyiu0Ybeo0cCgDbr+HtPo0kmLsxJ3abtDQuf1i39KZLR9SvC6Xjla4uXPn8pe//KVDz3WDyqpali7byrvv7uBUSXnItpPWKZkpU0Zy1x3jYrbbRwt+BHnvvfeYMWOG7Rht6jryavrN+BYSnwDGkFwKSeG/FsyKui5Q3zWwYn9excG9FC59FeNp6NDz3377bb7xjW906Lk2bf70IL9+bhWnT4evZZCSksh9997IN27PRqRjf69IpQU/QpSVlTFy5EiOHz9uO8pFdbvyGvpOuxOJa3GCV4wU/brOUN8tuOJRdfQAX7z1EqahPuDn9urViz179kRM105lVS3Pz1/L6vd3WsswevQAfvyj2+jfL8NahnDT0zIjxKOPPurqYp9x1QT6Tm9V7AFEqMuA+nQ7uULNAHVdgy/2AGmDshj0zQeRxMD7mU+dOsUjjzwSdIZw+HTLIb57/0tWiz3Azp2FPPC9l1myNA+3Nm7DSQu+S7z33nuu7rfvOvrr9Jl2B01j4fkgQl2GUJvh7+DAkcEI1PaA+i7OdQt0GjiES+68D0kI/AynRYsWsWTJEseyhMLSZVv5yeNvhLULpy21tQ38dv4anvn1ShobY3vUVy34LlBWVsaDDz5oO8ZFdR42mn63fuvixb6FhnShphd4o2DP8sZDdS/wdHK+DzhtUBYD5vwjvgebbdtDDz3E6dOnHc/khD+9/jH//fwHjp1946RVq3fysyeX0dAQu/M0R8G/ZeT7+c9/TmFhoe0YPiX36kf/md++sBunDY3JQnUf8KSEMFiINXRqOs/emxS6A36dLxtJ75tnBvy8U6dO8dOf/jQEiYLz50Wf8PKrH9mO0aYNG/P5P0/lxmxLXwu+ZceOHeP555+3HcOn+E7pDLzju8QlJQf8XBMv1GQKNd2bukUihTcOanpAbQ+B+NAH7zH+ZrqOCnyk8AULFnDw4MEQJOqY3BXbWfDSh7Zj+OWjDfv59XPvxWSfvhZ8y/7jP/6D2loXzvoYF8fA2+eR1LV7UKvxpAlVfZpazG7+9zI0HXSu6hOaLpy29J1+F6n9BgX0nIaGBp544okQJQrM/v1F/Ndv37cdIyCrVu9kxTuxNyaUFnyL9u7dy2uvvWY7hk99p9xBp4FDHFmXSRBqewjVvd3XzWNo7r7pC3UZ4WnVtxaXkMiAb9xLQnpgYxMtXryY7dvtzkRWX+/hl796F6/XzW/nvv3hxfWcLA5urKNIowXfoscff5zGRvcdQOo8bDQZY4If8bE1b1JTN09VL/stfiNQn9Y0+FltD8Ek2O13SkzvQr8Z3wroOcYYfvKTn4QokX8W/vFvHDnizgPI7ampqedXv14ZU107WvAt2bRpE0uXLrUd4wLxKZ3oO/WOkG7Dm9zU4q/q13R+uzchpJv7isbEpqERKvtBXXcJ6UHZQKUPuYJuXxsf0HNWr17N+vXrQ5Sobfv3F7HojU1Wtu2UbduPxlTXjhZ8Sx577DHbEXzqM+UbJKR3Ccu2TLxQ30Wo6itU9oHaruBJdrblb2haZ203qOwL1X2kaRwcH0Mau0HvW3JI6BzYGDA29qXGRm/EduW09ocX11MSwvF93EQLvgWffPIJH37ovjMaOg8bTdeRY61s2yQKDV2Eml5C5QCo6gW1GU3dLp7kpk8BbZ3tY6RpfHpPctNzajOaTqusHAA1vZqKvO1uG3/Ep6TSb/pdAT3n008/Zc2aNSFK5NvHnxyI2K6c1mpq6lm6fJvtGGGhBd8CN56GGZecEvKuHL+J4E0WGtKFuu5NbwJVfYXKAUJF/6bumMq+zV/9aPrZAKG6b9Oydd2bnutNEojAgbPShw4P+FTN+fPnhyiNb7kr7B4sdtqq1Z9TX++xHSPktOCHWUlJCW+++abtGBfoMf7msHXlBCVOMPFNrXWT0HTbrd0zweh1461No5H6KTc3N2wX7x0rPMu27UfCsq1wOXeumg8/2mc7Rsg5UvBFZLqI7BeRAhG5oENRRH4gIntE5HMRWSsigZ10HEUWLFhAfX3gIyWGUkJaZ3pk32g7hmohsUsG3a++we/lGxsb+cMf/hDCRH+Xu2KbK4dOCNbyKPvU4kvQBV9E4oHngVuBEcDdIjKi1WLbgWxjzNeAt4D/DHa7kcjr9YbtnzIQPa+b2qGraVVo9Zwwibhk/y9cWLBgAQ0NHRtr3191dQ3WR8AMlT17jlNQUGw7Rkg50cIfBxQYYw4ZY+qBRcBX5r0zxqw3xlQ3390ExOQElO+++y5Hj3Z8ftNQSOzWk4wrr7EdQ/kQn9qJnuNv8Xv5kydPhnwkzT17T1BZWRfSbdj06ZZDtiOElBMFvz/QcvLVwuafXcx9wHu+HhCRB0UkT0TySkpKHIjmLuE+sOaPzOunIfHxtmOoi+iefQPxnfyfaCDU+1j+gZMhXb9t0f77OVHwfR0x89nDJyL/AGQDz/h63BjzgjEm2xiTnZmZ6UA09/jiiy9YvXq17RhfEZ/Wma7Dr7QdQ7UhLimZjCv9vxjro48+Yv/+/SHLk58f3QVRC377CoGBLe4PAE60XkhEJgOPAznGmOj9THgRy5cvd90l3BlXXhPQmSDKjm5XTSCQcfOXLVsWsiwHorwgnjxZRnl5je0YIeNEwd8CZInIpSKSBMwFclsuICJjgD/QVOxPObDNiJObm9v+QuEkQsZV2ncfCZK6dif9stbnQVzcihUrQpKjqqqO4ydKQ7JuN4nmVn7QBd8Y4wEeAVYDe4E3jDG7ReRnIpLTvNgzQDrwpoh8JiIuq36hVV5e7roraztnjSKxS+xM7Bzpuo+9zu9lP/nkk5DMiHX4SElUno7Z2uHD0Xf88DxHPs8bY1YCK1v97Kctbk92YjuRatWqVSE/XS5QGVc5PxqmCp20S4eR2K0HDefOtLus1+vlnXfeYd68eY5mqKl21/UjoVJdE72/p15pGwZu686JS+lE2uAs2zFUAETi6HK5/wfYQ7HP1cXA0ANAVA+xoAU/xDweDytXrmx/wTDqPHQ4EqenYkaazlkj/V72/fffp67O2XMjYmUeWI8nen9PLfghtnHjRkpL3XWgK5DCodwjtd8g4lPT/Fq2qqqKdevWObr9xMTYaCQkJUXvmWta8EPM6X+6oMXFk3bpFbZTqA6QuLiAztZxet9LTk50dH1ulZQUvW9sWvBDbOvWrbYjfEXaJUOJD2B8FuUunS/z/9OZ0/teRkYnR9fnVhnd/PsUFYm04IeY6wr+4GG2I6ggpA3y/2D7tm3bHL3Yb9AlPaO6u+O8YVl9bEcIGS34IXT8+HGKi901+l5q34HtL6RcKz4llaSMnn4tW1ZWRkFBgXPbjo9j6JBejq3PjRIT47n00uga1qUlLfgh5LbWPUBK75gcqDSqpPTx/2/o9D4Yza1fgMGDe0b1wWkt+CHktoKf2K0n8SmptmOoIKX08f9TmuMFf1hvR9fnNpcP62s7QkhpwQ8htxX81ABahsq9Avk7Or0PXn55dBfEYcOi+xOMFvwQclvBD6QrQLlXIN1yTh+4HXJpL4ZEaR93UlICN15/ue0YIaUFP0QqKys5edJdo+4ldtXB0qJBfEqq31MflpWV4fRkQrNmjXF0fW5x801X0KVLdHd5asEPkRMnLpgSwLrE9K62IyiHJATwt3R6X5w6eRSdOiU5uk43yMkZaztCyGnBD5GioiLbES6QkN7FdgTlkMQA/pZO74upqUlMmTTK0XXadvmwPgy/op/tGCGnBT9E3NjCT0jrbDuCckggb96h2Bdnz46u1nBOlHZTtaYFP0Tc1sKPS04hLinZdgzlkEC6dEKxLw4e1JPp00Y7vl4bhg7pxZTJ0fWJ5WK04IeI2wp+fGq67QjKQQmd/B/vJVT74sMPTSIzM7I/NSYkxPFv/3obCQnRe7FVS1rwQ8RtXToSHxs7dMwIYPL5UO2L6Wkp/OBfpodk3eHy7bsncNll0X0xWUta8EPEbS18idM/dTQJ5O8Zyn1x/LihEdu1M3RIL/7h29fajhFWWgVCpKyszHaErxKxnUA5KYC/Z6j3xYcfmkTv3pF1BlhSUkJMdeWc50jBF5HpIrJfRApE5DEfjyeLyOLmxzeLyGAntutmHo/L5sX0Ru+0bTEpgL9nqPfF9LQUfvnUt+jWLTLGy4+Pj+Pf//85MdWVc17QBV9E4oHngVuBEcDdItJ6Wp77gFJjzGXAc8Avg92u27mt4Bst+FElkL9nOPbFSwb24JdPfZP0dHefCRYXJ/zbv97GhGsusx3FCida+OOAAmPMIWNMPbAImN1qmdnAa8233wImiUR3H0NDQ4PtCF/hbXB2Qmtll7fe/79nuBofWZf14dlnvk2GS1v6CQlxPPH/5TB5UuzO6exEwe8PHGtxv7D5Zz6XMcZ4gDKgR+sViciDIpInInlOj/8R6zyVFRijrfxo4al02TGiZpdd1pvfPPcP9O3jrmE8OnVK4uf/+w4m3jTcdhSrnCj4vlrqrYfn82cZjDEvGGOyjTHZmZmRPSJfQoLLpoIzXhqrq2ynUA7xVFX4vWy498WBA7qz4IX7mDVzjCvOFRg7ZhALXriP8eOG2o5inRN7QiHQckaGAUDrE3/PL1MoIglAV+CsA9t2rcTERNsRLuCpLNfhFaKEp8L/Fr6NxkdqahKP/q9p3HTD5Tzz7EqKi8vDnqFTpyS+98DNzJoZG8Mm+MOJFv4WIEtELhWRJGAukNtqmVzgnubbdwLrjJODdLuQ61r4NBV8FR0aqvz/W9rcF8eOHczLL97PrJljiIsLX3P/6rGDv/yUof4u6D3BGOMRkUeA1UA88LIxZreI/AzIM8bkAi8BfxSRAppa9nOD3a7bde7svpZ0g0v7fVVgjPEG9OZte18839qf+83xrHhnO++t/pyyshrHt5OUlMDNN11BTs7YmBj5siMcees3xqwEVrb62U9b3K4F7nJiW5Gib1/3TQVXd7rYdgTlgPqzpwM6D98t+2Lfvt148IGbmXfPDfz1w70sz93O3n3BD/vQt283cmaN4dZpX4v6CUyC5b5+hyjRr5/7Whi1JwttR1AOCPTv6LZ9MSkpgalTRjN1ymhOFpeRn19Efn4x+QdOkn/gJOXlF2/9p6QkctnQ3gzL6s2wYX3IyurD4EE9ifKzvB2jBT9E3NKqaqm2uBBjvIjoiBqRrKb4WPsLteDGffG8Pr270qd3V2684Yovf1Z8qoyyshrq6z3U13tITIwnKTGBtLRk+vXLCOuxgGijBT9E3PhP5q2vo/5sCck9Yu+S8mgSaAvfjftiW3r36krvXu46jz9aaFMvRNz2Mfo87daJbMZ4I75LR9mjBT9E3Nqqqj5x1HYEFYS606cCGlYB3LsvqvDTgh8ibm1VVRbssR1BBaHyYOB/P7fuiyr8tOCHSJcuXejZs6ftGBdoKDtLbYm7JmdR/qso2B3Q8unp6fTq1StEaVSk0YIfQldffbXtCD5VHgisaCh38FRXUlN4JKDnjBkzhjid7Uw10z0hhNxa8ANtJSp3aOrOCWxEErfug8oOLfgh5NZ/tpoTR2nQcXUiTkUHPpm5dR9UdmjBDyE3/7OV7cqzHUEFwFNVQUUHDri7eR9U4acFP4QGDRpEjx4XzPPiCqXbP9ZpDyPIuR2bwdsY0HPS09O5/PLLQ5RIRSIt+CHm1hZWQ9lZKg/tsx1D+cF4vZz97OOAn6cHbFVrujeEmFsLPkDp9r/ZjqD8UHlwD57ycwE/z837nrJDC36I3XzzzbYjXFTlwX3UnztjO4Zqx9ltgbfuASZOnOhsEBXxtOCH2E033USXLl1sx7gIw+lN62yHUG2oOXmMqsOBd72lpqYyZcqUECRSkUwLfoglJSUxbdo02zEu6tyOzdSdPWU7hrqIU399t0PPmzRpEp06dXI4jYp0WvDDICcnx3aEizNeSj56z3YK5UPVkXyqjuR36LmzZs1yOI2KBlrww+C2225z5aTm55Xv20FNUWCTaqjQK+5g615EtOArn7Tgh0FGRgbXXXed7RhtOvXXd2xHUC2U79tB7cmOvQlnZ2frkMjKp6AKvoh0F5EPRORA8/cMH8tcJSKfiMhuEflcRL4VzDYjlau7dYCqowco3/eZ7RgKaKyrpXhdboef7/Z9TdkTbAv/MWCtMSYLWNt8v7Vq4B+NMSOB6cBvRKRbkNuNOLNnz7YdoV1Fq1tTF58AAA/LSURBVN/GU1VhO0bMO7V+BQ3lpR1+fiTsa8qOYAv+bOC15tuvAXNaL2CMyTfGHGi+fQI4BWQGud2IM3ToUNefF91YU0XR+0tsx4hplUfyKf3skw4/f9y4cYwePdrBRCqaBFvwextjigCav7c504KIjAOSgIMXefxBEckTkbySkpIgo7nPww8/bDtCuyr279CuHUsa62opWrk4qHVEwj6m7Gm34IvIGhHZ5eMroM+NItIX+CNwrzHG56hdxpgXjDHZxpjszMzo+xBw++23R8TBNO3asaM4yK6cHj168K1vxeQhMuWndgu+MWayMWaUj6/lQHFzIT9f0H1ewSMiXYB3gSeMMZuc/AUiSUJCAg888IDtGO1qrKni2NJXMY0e21FiRunnmzkXRFcOwL333ktKSopDiVQ0CrZLJxe4p/n2PcDy1guISBKwFFhojHkzyO1FvO9973uuPif/vJrCw9qfHybVhYcpWvVWUOuIi4vjoYceciiRilbBFvyngSkicgCY0nwfEckWkQXNy3wTuBGYJyKfNX9dFeR2I1a/fv0i5iyKczs2cXbrRtsxolpDWSnHlrwS8Fj3rU2bNo0hQ4Y4lEpFq6AKvjHmjDFmkjEmq/n72eaf5xlj7m++/SdjTKIx5qoWXzF9VDCSDqydXLOsw5f3q7Z5G+o5tuRlGqsrg15XJO1Tyh690taCW265hfHjx9uO4R/j5djS16gtPm47SVQxjR4Kl//Rkdd19OjRzJgxw4FUKtppwbfkqaeesh3Bb966Go4u+j21JSdtR4kKxttIYe7rVBYEPim5L0899ZTObKX8onuJJTfffDNTp061HcNvjTVVHF30O2pLimxHiWimsZHjK/5Mxf4djqzvhhtu4LbbbnNkXSr6acG36Omnn0ZEbMfwW2NVBUf/PJ+a4kLbUSKS1+OhcPlCyvdud2ydTz/9tGPrUtFPC75FY8aMibgLZRprqjj65/lUHt5vO0pEaayt5thbC6jI3+nYOnNycrj22msdW5+KflrwLXvyySdJTEy0HSMg3rpavnjjRc7kbbAdJSLUnS7m8Gu/cfRsp7i4OH7xi184tj4VG7TgWzZ06FDuv/9+2zECZ7wUr1nKiZWL8Xr0ityLqTi4l8N//L/Ul552dL3f+c53GDlypKPrVNFPjDG2M/iUnZ1t8vLybMcIi9OnTzNixAgidcC41P6DGXj7PBLS3TpZux2nN61rnpPW2f+xbt26sXv3bvr16+foelV0EJGtxphsX49pC98FevbsyfPPP287RofVHD/CwQX/SdmebbajuEJ92VmO/uV3zbOIOd+g+s1vfqPFXnWIFnyXuOuuu7jzzjttx+iwxtpqjuf+iWNLXonpkTbPbv+YQy89Q9XRAyFZ/8yZM7nnnnvaX1ApH7RLx0VKSkoYOXJkxHbtnBef0ok+U79B1xFjbUcJm/qysxStXByyQg/alaP8o106ESIzMzOiu3bOO9/aP/Ln56k+ftR2nJBqrK2meP07HHzxlyEt9qBdOSp42sJ3obvuuou33gpuuFw36TxsNL1uvJXknn1sR3GMt6Ges3kbOL1pHd66mpBvb+bMmaxYsSLk21GRr60WvhZ8FyopKWHUqFGcOuVzPpnIJEK30V+nx/hbSO7R5kyYruatr+PcrjxOf7wGT2VZWLaZkZHBrl27tHWv/NJWwXf/TBwxKDMzkzfffJPJkyfT0NBgO44zjOHc559y7vNPSRuURcbY6+icNRKJi7edzC91Z05Ruv1vnNu5BW9dbdi2Gx8fz+LFi7XYK0dowXepG2+8kd/+9rd873vfsx3FcVVHD1B19AAJnbuScdUEuo3+OoldMmzHuoDX00Dlwb2UbvtbyPvnL+ZXv/oVU6ZMsbJtFX20S8fl/vmf/5n58+fbjhFyKb37k37ZSDpnjSS1z0BrOTxVFVQe3EtFwW4qD+/HNNRby3Lvvffy8ssvW9u+ikzahx/BPB4PU6dOZf369bajhE1C566kDxlOav9BpPYZSHKP3kh8aLp+GirKqC0upPZkIZWH91Nz/CihuFgqUNdeey3r168nKSnJdhQVYbTgR7gzZ87w9a9/ncOHD9uOYoXEJ5DSqx8pfQaQ3LMPCeld/v6V1oW4NiaFN8ZLY001nsryL7/qy85Se7KQ2pPHXHmR2MCBA9myZQu9e/e2HUVFID1oG+F69OhBbm4uEyZMoLIy+PlPI41p9FBT9AU1RV/4fDw+pRNxSckQF4fExYExGK8X09iIp7oy6AnCwyk1NZVly5ZpsVchEdSFVyLSXUQ+EJEDzd8veuRNRLqIyHER+W0w24xVo0aNYtmyZaSkpNiO4jqNtdU0lJfScO4M9WdLqC89TUPZ2abTJiOo2CclJfHWW28xdmzsXKGswivYK20fA9YaY7KAtc33L+bnwIdBbi+mTZo0ibffflv7daNQQkICixYt0snIVUgFW/BnA681334NmONrIRG5GugNvB/k9mLejBkzWLx4MQlt9FuryBIXF8fChQu5/fbbbUdRUS7Ygt/bGFME0Pz9gksoRSQO+DXwr+2tTEQeFJE8EcmL9AHEQmnOnDm8+eab2tKPAgkJCbz++uvcfffdtqOoGNBuwReRNSKyy8fXbD+38TCw0hhzrL0FjTEvGGOyjTHZmZmZfq4+Ns2ZM4elS5dqn34ES0pK4o033mDu3Lm2o6gY0W6/gDFm8sUeE5FiEelrjCkSkb6Ar8FfJgA3iMjDQDqQJCKVxpi2+vuVH2bMmME777zD7Nmzqaqqsh1HBSA1NZU333yT2267zXYUFUOC7dLJBc7PxnAPsLz1AsaY/2GMucQYMxj4EbBQi71zJk2axMcff8zgwYNtR1F+GjBgABs2bNBir8Iu2IL/NDBFRA4AU5rvIyLZIrIg2HDKP1/72tfYsmULN910k+0oqh0TJkxgy5YtXH311bajqBikV9pGkYaGBr7//e/z+9//3nYU5cO8efP4/e9/T3Jysu0oKorpjFcxIjExkd/97nfMnz9fT9t0kfj4eJ599lleeeUVLfbKKi34Ueihhx7igw8+oGfPnrajxLyMjAxWrlzJo48+ajuKUlrwo9XEiRPZtWsXc+b4vBZOhcGMGTPYuXMnU6dOtR1FKUALflTr3bs3S5cu5fXXX6d79+6248SMbt268corr/Duu+/Sv39/23GU+pIW/Bjw7W9/mz179mhrPwxmzJjBrl27mDdvnu0oSl1AC36M0NZ+aGmrXkUCLfgx5nxr/7777iM+RLNIxZK4uDi+853vaKteRQQt+DGod+/eLFiwgJ07d+oIjUGYOXMmn332GQsXLtRWvYoIWvBj2PDhw1myZAmbNm1i4sSJtuNEjOuuu44NGzawYsUKRo8ebTuOUn7Tgq8YP34869evZ9WqVYwZM8Z2HNcaNWoUubm5bNy4keuvv952HKUCpgVffWnatGls3bqVd999l9tuu424ON09RISpU6eybNkyduzYwaxZs2xHUqrD9D9afYWIfDnsckFBAT/+8Y9j8ord7t2784Mf/ID8/HxWr17N7Nmz9Q1QRTwdPE21q66ujjfeeIP58+ezadMm23FCKjs7m4cffpi5c+eSmppqO45SAWtr8DQt+Cogu3btYtmyZeTm5pKXl4db959AjB07lpycHObMmcOVV15pO45SQdGCr0KiqKiId955h9zcXNauXUtNTY3tSH5JTk7mlltuIScnh1mzZukplSqqaMFXIVddXc2aNWtYt24dW7duZfv27a6ZdrFTp05cddVVXH311UycOJFp06aRlpZmO5ZSIaEFX4Wd1+tl3759bN269cuvcLwJtCzu57+GDx+uVxWrmKEFX7mC1+ulqKiIoqIiTpw4ccHtEydOUF5ejsfjoaGhAY/HA0BCQgKJiYkkJCTQuXNn+vXrR9++fb/83vq2FncVy9oq+DotkgqbuLg4+vfvr33mSlmiJxYrpVSMCKrgi0h3EflARA40f8+4yHKXiMj7IrJXRPaIyOBgtquUUipwwbbwHwPWGmOygLXN931ZCDxjjBkOjANOBbldpZRSAQq24M8GXmu+/RpwwZRKIjICSDDGfABgjKk0xlQHuV2llFIBCrbg9zbGFAE0f+/lY5lhwDkRWSIi20XkGRHxeRqFiDwoInkikldSUhJkNKWUUi21e5aOiKwB+vh46PEAtnEDMAb4AlgMzANear2gMeYF4AVoOi3Tz/UrpZTyQ7sF3xgz+WKPiUixiPQ1xhSJSF98980XAtuNMYean7MMuAYfBV8ppVToBNulkwvc03z7HmC5j2W2ABkiktl8/xZgT5DbVUopFaBgC/7TwBQROQBMab6PiGSLyAIAY0wj8CNgrYjsBAR4McjtKqWUCpBrh1YQkRLgqO0cIdYTOG07hMvpa9Q+fY3aFmuvzyBjTKavB1xb8GOBiORdbMwL1URfo/bpa9Q2fX3+TodWUEqpGKEFXymlYoQWfLtesB0gAuhr1D59jdqmr08z7cNXSqkYoS18pZSKEVrwlVIqRmjBD6MA5g9oFJHPmr9yw53TBhGZLiL7RaRARC4YZltEkkVkcfPjm2NtTgU/Xp95IlLSYr+530ZOW0TkZRE5JSK7LvK4iMh/Nb9+n4vI2HBndAMt+OHl7/wBNcaYq5q/csIXz47m0VOfB24FRgB3Nw+r3dJ9QKkx5jLgOeCX4U1pj5+vD8DiFvvNgrCGtO9VYHobj98KZDV/PQj8LgyZXEcLfni1O39AjBoHFBhjDhlj6oFFNL1WLbV87d4CJomIhDGjTf68PjHNGPMRcLaNRWYDC02TTUC35gEfY4oW/PDyZ/4AgJTmeQE2iUgsvCn0B461uF/Y/DOfyxhjPEAZ0CMs6ezz5/UBuKO5u+ItERkYnmgRw9/XMKq1OzyyCowD8wcAXGKMOSEiQ4B1IrLTGHPQmYSu5Kul3vp8YX+WiVb+/O4rgL8YY+pE5J9o+jR0S8iTRY5Y3n++pAXfYQ7MH4Ax5kTz90Mi8leaJo+J5oJfCLRskQ4ATlxkmUIRSQC60vZH+GjS7utjjDnT4u6LxNAxDj/5s49FPe3SCa925w8QkQwRSW6+3RO4juifP2ALkCUil4pIEjCXpteqpZav3Z3AOhM7Vw22+/q06o/OAfaGMV8kyAX+sflsnWuAsvPdq7FEW/jh9TTwhojcR9N0j3dB0/wBwD8ZY+4HhgN/EBEvTW/ITxtjorrgG2M8IvIIsBqIB142xuwWkZ8BecaYXJpmSPujiBTQ1LKfay9xePn5+nxfRHIAD02vzzxrgS0Qkb8AE4GeIlII/DuQCGCM+T2wEpgBFADVwL12ktqlQysopVSM0C4dpZSKEVrwlVIqRmjBV0qpGKEFXymlYoQWfKWUihFa8JVSKkZowVdKqRjx/wCoGPwCzurUOwAAAABJRU5ErkJggg==\n",
+      "text/plain": [
+       "<Figure size 432x288 with 1 Axes>"
+      ]
+     },
+     "metadata": {
+      "needs_background": "light"
+     },
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "ax1= plt.subplot(111)\n",
+    "C=Circle((0,0),R,fc='k',zorder=1) # center, radius, color -- for big circle\n",
+    "xcoord=[random.random() for x in r] # small circles centers\n",
+    "ycoord=[random.random() for x in r]\n",
+    "\n",
+    "colors=[cm.viridis(x%1) for x in r]\n",
+    "\n",
+    "ax1.add_patch(C) # big circle\n",
+    "\n",
+    "for k in range(len(r)):\n",
+    "    ax1.add_patch(Circle((xcoord[k],ycoord[k]),r[k],fc=colors[k],zorder=2)) # small circles\n",
+    "plt.xlim(-1.1*R,1.1*R)\n",
+    "plt.ylim(-1.1*R,1.1*R)\n",
+    "plt.axis('equal')\n",
+    "plt.show()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Let's split on discord:\n",
+    "\n",
+    "1. Can we limit circles to be all inside the [-R,R]x[-R,R] square? **room 1-3**\n",
+    "\n",
+    "    * shift the center of the circle to be in [-R,R] --> shift random pick from [0,1], to [-R,R]\n",
+    "\n",
+    "2. Can we limit the small circles to be inside the big circle, given `R`, `r=[r1,r2,r3,...]` **room 4-6**\n",
+    "    \n",
+    "    * for loop on small circles (k)\n",
+    "        * try for each circle to place it 1000 times (try as long as we do less then 1000 tries)\n",
+    "            * pick (xk,yk) at random (as in point 1.)\n",
+    "            * compute `dk` the center-to-center distance between (0,0) center of big circle and center (xk,yk) of small circle\n",
+    "            * compute R-rk \n",
+    "            * happy if `dk`<(R-rk) --> plot circle k, now look at circle k+1\n",
+    "            * not happy if `dk`>=(R-rk) --> try again --> pick xk,yk again\n",
+    "        * if we fail for 1000 times straight we stop, and the problem fails\n",
+    "    \n",
+    "\n",
+    "3. Can we limit the small circles to be disjoint **room 7-9**\n",
+    "\n",
+    "    * starting from 2.\n",
+    "    * compute `dkh` center-to-center distance between circle k and circle h (for all circles h with h<k)\n",
+    "    * check that `dkh`>rk+rh\n",
+    "    \n",
+    " **room 10** quiet room\n",
+    " \n",
+    " \n",
+    " for the project,\n",
+    " \n",
+    "* p series , p >1 (suggestion keep p in (1,1.5] )\n",
+    "\n",
+    "* geom series p in [0,1)\n",
+    "\n",
+    "* interesting parameters: number of tries to correctly place a circle?...."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
