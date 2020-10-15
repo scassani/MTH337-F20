@@ -1,27 +1,30 @@
-Week 7: Mar 09 - 14
+Week 7: Oct 12 - 16
 ===================
 
-Project 4
+Project 3
 ~~~~~~~~~
 
-* :doc:`Tartans </Projects/tartans/tartans>`.
-
+* :doc:`Mayfly model </Projects/mayfly_model/mayfly_model>`.
 
 Python
 ~~~~~~
 
-* :doc:`Multidimensional numpy arrays </PT/PT-multidimensional_numpy_arrays/PT-multidimensional_numpy_arrays>`
-* :doc:`Image processing </PT/PT-image_processing//PT-image_processing>`
-* Dictionaries
+* :doc:`numpy arrays </PT/PT-numpy_arrays/PT-numpy_arrays>`
+* copy of numpy arrays
+* vectorization
 
+Mathematics
+~~~~~~~~~~~
+
+* Population model
 
 Week 7 notebook
 ~~~~~~~~~~~~~~~
 
-- `View online <../_static/week7_in_class.html>`_
-- `Download  <../_static/week7_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
+- `View online <../_static/week07_in_class.html>`_
+- `Download  <../_static/week07_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
 
 Sample quiz
 ~~~~~~~~~~~~~
 
-- NO QUIZ
+- No quiz this week
