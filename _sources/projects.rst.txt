@@ -10,3 +10,4 @@ Projects
 	A particular sequence <Projects/part_sequence/part_sequence>
 	Is there room? <Projects/room/room>
 	Mayfly <Projects/mayfly_model/mayfly_model>
+	Tartans <Projects/tartans/tartans>

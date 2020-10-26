@@ -103,31 +103,30 @@ be graded according to the following rubrics:
 +---------------------------+------------------------------------------------------------------------+
 | Tartan                    | Description                                                            |
 +===========================+========================================================================+
-| .. image:: Alexander.png  | | **Alexander (Antonio)**                                               |
-|    :width:  150px         | | DR15 DN40 DW12 K8 DN20 DW44 K56 DN12 DR12 DW44 DN12 DR4 DW24 K4 DW6  |
-|			    					 | | DN20 DW6 K4 DW24 DR4 DN12 DW44 DR12 DN12 K56 DW44 DN20 K8 DW12 DN40  |
-|			                   | | DR15                                                                 |
-|                           |                    		                                               | 
-|                           | | DR : [140, 0, 0]           			   		                          |
-|                           | | DN : [100, 108, 100]           			                  		     |
-|                           | | K : [0, 0, 0]           			   		                             |
-|                           | | DW : [176, 176, 176]           			                  		     |
+| .. image:: Hughes.png     | | **Hughes (Antonio)**                                                 |
+|    :width:  150px         | | FSB4 K24 B6 FSB8 B6 K6 YY72 B6 FSB4 YY6 FSB4 B6                      |
+|                           | | YY72 K6 B6 FSB8 B6 K24 FSB4                                          |
+|                           |                                                                        | 
+|                           | | YY : [252, 204, 0]                                                   |
+|                           | | B : [44, 44, 128]                                                    |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | FSB : [36, 116, 232]                                                 |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: JubileeII.png  | | **Holyrood Golden Jubilee II (Barber)**                                 |
-|    :width:  150px         | | NB48 A24 GO6 WW6 GO6 DR22 NB10 DR4 GO14 WW4 GO14	            	     |
-|			 				       | | DR4 NB10 DR22 GO6 WW6 GO6 A24 NB48 				     |
-|                           |                    		                                     |
-|                           | | A : [92, 140, 168]                                 		     |
-|                           | | DR : [136, 0, 0]                                 		     |
-|                           | | GO : [188, 140, 0]                                 		     |
-|                           | | WW : [248, 248, 248]                                 		     |
-|                           | | AB : [24, 112, 164]                                 		     |
-|                           | | NB : [0, 60, 100]                                 		     |
+| .. image:: JubileeII.png  | | **Holyrood Golden Jubilee II (Barber)**                              |
+|    :width:  150px         | | NB48 A24 GO6 WW6 GO6 DR22 NB10 DR4 GO14 WW4 GO14                     |
+|                           | | DR4 NB10 DR22 GO6 WW6 GO6 A24 NB48                                   |
+|                           |                                                                        |
+|                           | | A : [92, 140, 168]                                                   |
+|                           | | DR : [136, 0, 0]                                                     |
+|                           | | GO : [188, 140, 0]                                                   |
+|                           | | WW : [248, 248, 248]                                                 |
+|                           | | AB : [24, 112, 164]                                                  |
+|                           | | NB : [0, 60, 100]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Peters.png   | | **Peter of Lee (Furbert-Peters)**                                            |
+| .. image:: Peters.png     | | **Peter of Lee (Furbert-Peters)**                                    |
 |    :width:  150px         | | R10 LG4 R8 B8 R20 G24 K4 G4 K4 G4 K4 G4 K4 G20 B4 G4 B4 G4 B4 YY4    |
-|			    | | B24 YY4 B4 G4 B4 G4 B4 G20 K4 G4 K4 G4 K4 G4 K4 G24 R20 B8 R8 LG4 R10|
-|                           |                    		                                     |
+|                           | | B24 YY4 B4 G4 B4 G4 B4 G20 K4 G4 K4 G4 K4 G4 K4 G24 R20 B8 R8 LG4 R10|
+|                           |                                                                        |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | R : [200, 0, 0]                                                      |
 |                           | | YY : [252, 204, 0]                                                   |
@@ -135,20 +134,20 @@ be graded according to the following rubrics:
 |                           | | B : [44, 44, 128]                                                    |
 |                           | | LG : [40, 156, 24]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Garten.png     | | **Boat of Garten (Gartenberg)**                                           |
-|    :width:  150px         | | MB62 W8 K4 W14 P4 G6 Y4 MB32 Y4 G6 P4 W14 K4 W8 MB62                |
-|                           |                    		                                     |
-|                           | | MB : [20, 30, 70]                                               |
-|                           | | W : [255, 255, 255]                                               |
-|                           | | K : [16, 16, 16]                                               |
-|                           | | P : [90, 0, 140]                                               |
-|                           | | G : [0, 80, 32]                                                |
-|                           | | Y : [232, 192, 0]                                                 |
+| .. image:: Garten.png     | | **Boat of Garten (Gartenberg)**                                      |
+|    :width:  150px         | | MB62 W8 K4 W14 P4 G6 Y4 MB32 Y4 G6 P4 W14 K4 W8 MB62                 |
+|                           |                                                                        |
+|                           | | MB : [20, 30, 70]                                                    |
+|                           | | W : [255, 255, 255]                                                  |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | P : [90, 0, 140]                                                     |
+|                           | | G : [0, 80, 32]                                                      |
+|                           | | Y : [232, 192, 0]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: MacKusick.png  | | **MacKusick (Hartz)**                                                  |
-|    :width:  150px         | | RB8 K4 RB6 K24 P6 LN2 P6 K32 G6 LN4 DR2 LN4 G16 LN4 		     |
-|                           | | DR2 LN4 G6 K32 P6 LN2 P6 K24 RB6 K4 RB8			             |
-|                           |                    		                                     |
+| .. image:: MacKusick.png  | | **MacKusick (Hartz)**                                                |
+|    :width:  150px         | | RB8 K4 RB6 K24 P6 LN2 P6 K32 G6 LN4 DR2 LN4 G16 LN4                  |
+|                           | | DR2 LN4 G6 K32 P6 LN2 P6 K24 RB6 K4 RB8                              |
+|                           |                                                                        |
 |                           | | RB : [0, 0, 140]                                                     |
 |                           | | G : [0, 120, 0]                                                      |
 |                           | | DR : [140, 0, 0]                                                     |
@@ -158,9 +157,9 @@ be graded according to the following rubrics:
 |                           | | SB : [120, 140, 180]                                                 |
 |                           | | P : [100, 0, 140]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Aberuchill.png | | **Aberuchill (Hussain)**                                              |
+| .. image:: Aberuchill.png | | **Aberuchill (Hussain)**                                             |
 |    :width:  150px         | | LP4 K2 OT10 DP30 OT30 G55 K4 O6 K4 G55 OT30 DP30 OT10 K2 LP4         |
-|                           |                    		                                     |
+|                           |                                                                        |
 |                           | | LP : [180, 104, 172]                                                 |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | OT : [96, 56, 0]                                                     |
@@ -168,9 +167,9 @@ be graded according to the following rubrics:
 |                           | | G : [0, 104, 24]                                                     |
 |                           | | O : [216, 124, 0]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: CarsonRed.png  | | **Carson Red (Iusi)**                                            |
+| .. image:: CarsonRed.png  | | **Carson Red (Iusi)**                                                |
 |    :width:  150px         | | A19 R4 A6 R4 A6 K86 R44 G6 R44 K86 A6 R4 A6 R4 A19                   |
-|                           |                    		                                     |
+|                           |                                                                        |
 |                           | | R : [200, 0, 0]                                                      |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | G : [0, 104, 24]                                                     |
@@ -178,28 +177,28 @@ be graded according to the following rubrics:
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: Ballantyne.png | | **Ballantyne (Jin)**                                           	     |
 |    :width:  150px         | | N60 G26 N18 DR16 Y8 DR16 N18 G26 N60                                 |
-|                           |                    		                                     |
-|                           | | RR : [140, 28, 40] 			                             |
-|                           | | DY : [200, 164, 56] 			                             |
-|                           | | VG : [36, 80, 36] 			                             |
-|                           | | N : [120, 120, 120] 			                             |
-|                           | | Y : [232, 192, 0] 			                             |
-|                           | | DR : [136, 0, 0] 			                             |
-|                           | | G : [0, 104, 24] 			                             |
+|                           |                                                                        |
+|                           | | RR : [140, 28, 40]                                                   |
+|                           | | DY : [200, 164, 56]                                                  |
+|                           | | VG : [36, 80, 36]                                                    |
+|                           | | N : [120, 120, 120]                                                  |
+|                           | | Y : [232, 192, 0]                                                    |
+|                           | | DR : [136, 0, 0]                                                     |
+|                           | | G : [0, 104, 24]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Fuller.png     | | **Fuller (Kyi)**                                                  |
+| .. image:: Fuller.png     | | **Fuller (Kyi)**                                                     |
 |    :width:  150px         | | K2 W4 K72 B80 W4 LR4 Y4 LR4 W4 B80 K72 W4 K2                         |
-|                           |                    		                                     |
+|                           |                                                                        |
 |                           | | LR : [200, 0, 80]                                                    |
 |                           | | Y : [236, 128, 72]                                                   |
 |                           | | B : [44, 44, 128]                                                    |
 |                           | | W : [248, 248, 248]                                                  |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: CC.png         | | **Crookdake-Cheng (Mele)**                                          |
-|    :width:  150px         | | DR2 RB48 LN12 K12 G12 YY8 G4 YY4 G4 YY2 G4 YY4 G4 	             |
+| .. image:: CC.png         | | **Crookdake-Cheng (Mele)**                                           |
+|    :width:  150px         | | DR2 RB48 LN12 K12 G12 YY8 G4 YY4 G4 YY2 G4 YY4 G4                    |
 |                           | | YY8 G12 K12 LN12 RB48 DR2                                            |
-|                           |                    		                                     |
+|                           |                                                                        |
 |                           | | RB : [0, 0, 140]                                                     |
 |                           | | G : [0, 120, 0]                                                      |
 |                           | | DR : [140, 0, 0]                                                     |
@@ -207,7 +206,7 @@ be graded according to the following rubrics:
 |                           | | LN : [200, 200, 200]                                                 |
 |                           | | YY : [252, 204, 0]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Accenture.png  | | **Accenture (Mohd Sollehhuddir)**                                              |
+| .. image:: Accenture.png  | | **Accenture (Mohd Sollehhuddir)**                                    |
 |    :width:  150px         | | W3 B50 P42 N6 G42 R4 G4 B8 N2 P6 N2 B8 G4 R4 G42 N6 P42 B50 W3       |
 |                           |                                                                        |
 |                           | | B : [44, 44, 128]                                                    |
@@ -217,8 +216,8 @@ be graded according to the following rubrics:
 |                           | | W : [224, 224, 224]                                                  |
 |                           | | N : [136, 136, 136]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: SAAA.png       | | **Scottish American Athletic Assioc.(Parasch)**                    |
-|    :width:  150px         | | Y32 K42 RR32 DW12 BN8 DW12 RR32 K42 Y32				     |
+| .. image:: SAAA.png       | | **Scottish American Athletic Assioc.(Parasch)**                      |
+|    :width:  150px         | | Y32 K42 RR32 DW12 BN8 DW12 RR32 K42 Y32                              |
 |                           |                                                                        |
 |                           | | Y : [232, 192, 0]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
@@ -230,9 +229,9 @@ be graded according to the following rubrics:
 |                           | | WR : [120, 0, 40]                                                    |
 |                           | | RR : [144, 28, 28]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Robinson.png   | | **Robinson (Robinson)**                                                   |
-|    :width:  150px         | | Y2 B32 G4 B4 G32 K4 W32 LB4 W4 LB32 Y4 LB32 		|
-|									 | | W4 LB4 W32 K4 G32 B4 G4 B32 Y2		     |
+| .. image:: Robinson.png   | | **Robinson (Robinson)**                                              |
+|    :width:  150px         | | Y2 B32 G4 B4 G32 K4 W32 LB4 W4 LB32 Y4 LB32                          |
+|                           | | W4 LB4 W32 K4 G32 B4 G4 B32 Y2                                       |
 |                           |                                                                        |
 |                           | | K : [16, 16, 16]                                                     |
 |                           | | WW : [248, 248, 248]                                                 |
@@ -241,7 +240,7 @@ be graded according to the following rubrics:
 |                           | | G : [0, 104, 24]                                                     |
 |                           | | R : [200, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: King.png       | | **King (Sajdak)**      	      		                             |
+| .. image:: King.png       | | **King (Sajdak)**                                                    |
 |    :width:  150px         | | G1 R70 G4 K4 Y4 G32 B28 R4 W4 R4 B28 G32 Y4 K4 G4 R70                |
 |                           |                                                                        |
 |                           | | G : [0, 104, 24]                                                     |
@@ -254,15 +253,15 @@ be graded according to the following rubrics:
 | .. image:: Shapiro.png    | | **Shapiro (Shapiro)**                                                |
 |    :width:  150px         | | LY8 LSB4 LVP6 LY10 LSB3 LY28 LSB2 LY10 LSB4 LY10 LSB6 LY10 LSB6 LY10 |
 |                           | | LSB6 LY10 LSB10 LY4 LY10 LVP4 LSB10 LY2 LSB32 LY1 LY1 LSB10 LY4 LSB10| 
-|                           | | LY4 LSB10 LY6 LSB10 LY6 LSB4 LVP10 LY2 LVP2 LSB2 K16 LY8   			  |
+|                           | | LY4 LSB10 LY6 LSB10 LY6 LSB4 LVP10 LY2 LVP2 LSB2 K16 LY8             |
 |                           |                                                                        |
 |                           | | AB : [24, 112, 164]                                                  |
-|                           | | K : [16, 16, 16]                                                  |
-|                           | | GO : [188, 140, 0]                                                  |
-|                           | | PH : [108, 0, 112]                                                  |
-|                           | | LSB : [180, 196, 204]                                                  |
-|                           | | LVP : [216, 156, 204]                                                  |	
-|                           | | LY : [196, 188, 104]                                                    |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | GO : [188, 140, 0]                                                   |
+|                           | | PH : [108, 0, 112]                                                   |
+|                           | | LSB : [180, 196, 204]                                                |
+|                           | | LVP : [216, 156, 204]                                                |	
+|                           | | LY : [196, 188, 104]                                                 |
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: Lee.png        | | **Lee (Shi)**	                                                     |
 |    :width:  150px         | | G4 K4 G48 DR16 G12 RB36 LN8 RB36 G12 DR16 G48 K4 G4                  |
@@ -273,50 +272,50 @@ be graded according to the following rubrics:
 |                           | | LN : [200, 200, 200]                                                 |
 |                           | | RB : [0, 0, 140]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Smith.png		 | | **Smith (Smith)**                                             |
-|    :width:  150px         | | A3 B36 K40 G40 K2 YY6 K2 G40 K40 B36 A3               |
+| .. image:: Smith.png      | | **Smith (Smith)**                                                    |
+|    :width:  150px         | | A3 B36 K40 G40 K2 YY6 K2 G40 K40 B36 A3                              |
 |                           |                                                                        |
-|                           | | A : [92, 140, 168]						     |
-|                           | | K : [16, 16, 16] 						     |
-|                           | | B : [44, 44, 128] 						     |
-|                           | | G : [0, 104, 24]                                                   |
-|                           | | YY : [252, 204, 0]                                                  |
+|                           | | A : [92, 140, 168]                                                   |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | B : [44, 44, 128]                                                    |
+|                           | | G : [0, 104, 24]                                                     |
+|                           | | YY : [252, 204, 0]                                                   |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: PrincessD.png  | | **Princess Diana (Tang)**                                             |
-|    :width:  150px         | | K14 R4 K4 R4 K4 G36 R4 G36 W2 B24 A2 R16 A2 			     |
+| .. image:: PrincessD.png  | | **Princess Diana (Tang)**                                            |
+|    :width:  150px         | | K14 R4 K4 R4 K4 G36 R4 G36 W2 B24 A2 R16 A2                          |
 |                           | | B24 W2 G36 R4 G36 K4 R4 K4 R4 K14                                    |
 |                           |                                                                        |
-|                           | | B : [0, 0, 140] 						     |
-|                           | | G : [0, 120, 0] 						     |
-|                           | | R : [140, 0, 0] 						     |
-|                           | | K : [0, 0, 0] 							     |
-|                           | | W : [200, 200, 200] 						     |
+|                           | | B : [0, 0, 140]                                                      |
+|                           | | G : [0, 120, 0]                                                      |
+|                           | | R : [140, 0, 0]                                                      |
+|                           | | K : [0, 0, 0]                                                        |
+|                           | | W : [200, 200, 200]                                                  |
 |                           | | A : [120, 140, 180]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Rainbow.png    | | **Rainbow (Tangirala)**                                                  |
-|    :width:  150px         | | RB6 HS4 G8 RB24 ZR6 DW4 ZR16 DW6 G12 DW6 G12 DW6 G12 	             |
-|			    | | DW6 G12 DW6 ZR16 DW4 ZR6 RB24 G8 HS4 RB6 			     |
+| .. image:: Rainbow.png    | | **Rainbow (Tangirala)**                                              |
+|    :width:  150px         | | RB6 HS4 G8 RB24 ZR6 DW4 ZR16 DW6 G12 DW6 G12 DW6 G12                 |
+|                           | | DW6 G12 DW6 ZR16 DW4 ZR6 RB24 G8 HS4 RB6                             |
 |                           |                                                                        |
-|                           | | G : [0, 104, 24] 						     |
-|                           | | HS : [4, 136, 136] 						     |
-|                           | | DW : [184, 184, 184] 						     |
-|                           | | RB : [28, 0, 112] 						     |
+|                           | | G : [0, 104, 24]                                                     |
+|                           | | HS : [4, 136, 136]                                                   |
+|                           | | DW : [184, 184, 184]                                                 |
+|                           | | RB : [28, 0, 112]                                                    |
 |                           | | ZR : [160, 0, 0]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Queensland.png | | **Queensland (Tessier)**                                            |
+| .. image:: Queensland.png | | **Queensland (Tessier)**                                             |
 |    :width:  150px         | | R5 G12 P10 G20 Y12 B30 A44 W36 A44 B30 Y12 G20 P10 G12 R5            |
 |                           |                                                                        |
-|                           | | A : [92, 140, 168]						     |
-|                           | | B : [44, 44, 128] 						     |
-|                           | | P : [196, 156, 216]  						     |
-|                           | | R : [200, 0, 0]  						     |
-|                           | | W : [224, 224, 224]  						     |
-|                           | | Y : [232, 192, 0]  						     |
+|                           | | A : [92, 140, 168]                                                   |
+|                           | | B : [44, 44, 128]                                                    |
+|                           | | P : [196, 156, 216]                                                  |
+|                           | | R : [200, 0, 0]                                                      |
+|                           | | W : [224, 224, 224]                                                  |
+|                           | | Y : [232, 192, 0]                                                    |
 |                           | | G : [0, 156, 36]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Beatty.png     | | **Beatty (Townsend)**                                                 |
+| .. image:: Beatty.png     | | **Beatty (Townsend)**                                                |
 |    :width:  150px         | | K6 FSB6 RB56 MY16 K20 MY4 K4 LN4 K8 G32 DR24 K4 DR12 LN4 DR12 K4     |
-|			    | | DR24 G32 K8 LN4 K4 MY4 K20 MY16 RB56 FSB6 K6 			     |
+|                           | | DR24 G32 K8 LN4 K4 MY4 K20 MY16 RB56 FSB6 K6                         |
 |                           |                                                                        |
 |                           | | RB : [0, 0, 140]                                                     |
 |                           | | G : [0, 120, 0]                                                      |
@@ -327,20 +326,19 @@ be graded according to the following rubrics:
 |                           | | FSB : [52, 116, 252]                                                 |
 |                           | | P : [100, 0, 140]                                                    |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: PrinceE.png    | | **Prince Edward Island (Tsang)**                                    |
+| .. image:: PrinceE.png    | | **Prince Edward Island (Tsang)**                                     |
 |    :width:  150px         | | G20 T4 G8 T4 G8 T36 ZR36 T2 Y8 T2 ZR36 T36 G36 T2 WW8 T2 G36 	     |
 |                           | | T36 ZR36 T2 Y8 T2 ZR36 T36 G8 T4 G8 T4 G20                           |
 |                           |                                                                        |
-|                           | | G : [0, 104, 24] 						     |
-|                           | | T : [96, 64, 0] 						     |
-|                           | | Y : [232, 192, 0] 						     |
-|                           | | WW : [252, 252, 252] 						     |
+|                           | | G : [0, 104, 24]                                                     |
+|                           | | T : [96, 64, 0]                                                      |
+|                           | | Y : [232, 192, 0]                                                    |
+|                           | | WW : [252, 252, 252]                                                 |
 |                           | | ZR : [160, 0, 0]                                                     |
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: BlairDress.png | | **Blair Dress (Vargas)**                                             |
 |    :width:  150px         | | DB2 DR4 DB24 KK10 DG24 DR4 DG4 DR4 DG24 KK10 W28 DR4 W4 DR4  	     |
-|			    | | W28 KK10 DG24 DR4 DG4 DR4 DG24 KK10 DB24 DR4 DB2                     |
-|                           |									     |
+|                           | | W28 KK10 DG24 DR4 DG4 DR4 DG24 KK10 DB24 DR4 DB2                     |
 |                           |                                                                        |
 |                           | | DB : [0, 0, 96]                                                      |
 |                           | | DR : [136, 0, 0]                                                     |
@@ -349,18 +347,18 @@ be graded according to the following rubrics:
 |                           | | SW : [176, 176, 176]                                                 |
 |                           | | W : [224, 224, 224]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Plowman.png    | | **Plowman (Vella)**                                   	     |
+| .. image:: Plowman.png    | | **Plowman (Vella)**                                                  |
 |    :width:  150px         | | W1 HG6 R48 HG4 R4 DP36 R4 HG4 R2 YT2 HG2 R40 DP4 R4 HG6 R4 DP34      |
-|			    | |	R4 DP34 R4 HG6 R4 DP4 R40 HG2 YT2 R2 HG4 R4 DP36 R4 HG4 R48 HG6 W1   |
+|                           | | R4 DP34 R4 HG6 R4 DP4 R40 HG2 YT2 R2 HG4 R4 DP36 R4 HG4 R48 HG6 W1   |
 |                           |                                                                        |
-|                           | | DP : [40, 0, 60] 						     |
-|                           | | YT : [220, 188, 0] 						     |
-|                           | | P : [120, 0, 120] 					   	     |
-|                           | | HG : [40, 88, 0] 						     |
-|                           | | W : [224, 224, 224] 						     |
+|                           | | DP : [40, 0, 60]                                                     |
+|                           | | YT : [220, 188, 0]                                                   |
+|                           | | P : [120, 0, 120]                                                    |
+|                           | | HG : [40, 88, 0]                                                     |
+|                           | | W : [224, 224, 224]                                                  |
 |                           | | R : [200, 0, 0]                                                      |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Wolfe.png      | | **Wolfe (Wolfe)**                              					        |
+| .. image:: Wolfe.png      | | **Wolfe (Wolfe)**                                                    |
 |    :width:  150px         | | AY4 AR72 AG8 AR26 AG26 AR8 AG8 AR8 AG26 AR26 AG8 AR72 AY4            |
 |                           |                                                                        |
 |                           | | AG : [0, 100, 60]                                                    |
@@ -368,44 +366,43 @@ be graded according to the following rubrics:
 |                           | | AY : [220, 148, 60]                                                  |
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: Cairn.png      | | **Cairn (Yan)**                                                      |
-|    :width:  150px         | | N6 W80 DR4 DB4 DR4 DB12 DR16 DB8 DR16 DB8 DR16 DB4  		     |
-|			    | |	OG32 DY4 OG32 DB4 DR16 DB8 DR16 DB8 DR16 DB12 DR4 DB4 DR4 W80 N6     |
+|    :width:  150px         | | N6 W80 DR4 DB4 DR4 DB12 DR16 DB8 DR16 DB8 DR16 DB4                   |
+|                           | | OG32 DY4 OG32 DB4 DR16 DB8 DR16 DB8 DR16 DB12 DR4 DB4 DR4 W80 N6     |
 |                           |                                                                        |
-|                           | | W : [224, 224, 224] 						     |
-|                           | | DR : [136, 0, 0] 						     |
-|                           | | DB : [32, 32, 96] 						     |
-|                           | | OG : [92, 100, 40] 						     |
-|                           | | DY : [232, 192, 0] 						     |
+|                           | | W : [224, 224, 224]                                                  |
+|                           | | DR : [136, 0, 0]                                                     |
+|                           | | DB : [32, 32, 96]                                                    |
+|                           | | OG : [92, 100, 40]                                                   |
+|                           | | DY : [232, 192, 0]                                                   |
 |                           | | N : [136, 136, 136]                                                  |
 +---------------------------+------------------------------------------------------------------------+
 | .. image:: Arizona.png    | | **Arizona (Ysit)**                                                   |
-|    :width:  150px         | | LT6 G8 WW8 R8 LT48 K8 G48 R8 G8 A8 G8 Y8 			     |
-|                           | | G8 A8 G8 R8 G48 K8 LT48 R8 WW8 G8 LT6 				     |
+|    :width:  150px         | | LT6 G8 WW8 R8 LT48 K8 G48 R8 G8 A8 G8 Y8                             |
+|                           | | G8 A8 G8 R8 G48 K8 LT48 R8 WW8 G8 LT6                                |
 |                           |                                                                        |
-|                           | | A : [92, 140, 168] 						     |
-|                           | | Y : [232, 192, 0] 						     |
-|                           | | K : [16, 16, 16] 					   	     |
-|                           | | WW : [252, 252, 252] 						     |
-|                           | | R : [200, 0, 0] 						     |
-|                           | | G : [0, 104, 24] 						     |
-|                           | | LT : [160, 136, 88] 						     |
-|                           | | LY : [196, 188, 104] 						     |
-|                           | | GO : [188, 140, 0] 						     |
-|                           | | AY : [220, 148, 60]                                                  |
+|                           | | A : [92, 140, 168]                                                   |
+|                           | | Y : [232, 192, 0]                                                    |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | WW : [252, 252, 252]                                                 |
+|                           | | R : [200, 0, 0]                                                      |
+|                           | | G : [0, 104, 24]                                                     |
+|                           | | LT : [160, 136, 88]                                                  |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: AilsaNavy.png  | | **Ailsa Navy (Zhao)**    	                                             |
+| .. image:: AilsaNavy.png  | | **Ailsa Navy (Zhao)**                                                |
 |    :width:  150px         | | RB8 W6 RB56 W64 K6 W8 K6 W64 RB56 W6 RB8                             |
 |                           |                                                                        |
-|                           | | W : [240, 224, 200] 						     |
-|                           | | RB : [28, 0, 112] 						     |
+|                           | | W : [240, 224, 200]                                                  |
+|                           | | RB : [28, 0, 112]                                                    |
 |                           | | K : [16, 16, 16]                                                     |
 +---------------------------+------------------------------------------------------------------------+
-| .. image:: Lewis.png      | | **MacLeod of Lewis (Zheng)**                                        |
+| .. image:: Lewis.png      | | **MacLeod of Lewis (Zheng)**                                         |
 |    :width:  150px         | | K16 Y4 K32 Y48 R4 Y48 K32 Y4 K16                                     |
 |                           |                                                                        |
-|                           | | K : [16, 16, 16]						     |
-|                           | | R : [200, 0, 0]	 						     |
-|                           | | Y : [216, 176, 0]						     |
+|                           | | K : [16, 16, 16]                                                     |
+|                           | | R : [200, 0, 0]                                                      |
+|                           | | Y : [216, 176, 0]                                                    |
 +---------------------------+------------------------------------------------------------------------+
+
+
 
 
