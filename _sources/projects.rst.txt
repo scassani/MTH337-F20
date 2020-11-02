@@ -11,3 +11,4 @@ Projects
 	Is there room? <Projects/room/room>
 	Mayfly <Projects/mayfly_model/mayfly_model>
 	Tartans <Projects/tartans/tartans>
+	Epidemic <Projects/epidemic/epidemic>
