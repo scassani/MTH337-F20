@@ -1,4 +1,4 @@
-Week 11: Apr 6 -- Apr 10
+Week 11: Nov 9 - 13
 ========================
 
 Project 5
@@ -13,6 +13,9 @@ Python
 * Broadcasting for numpy arrays.
 * :doc:`Boolean numpy arrays </PT/PT-boolean_numpy_arrays/PT-boolean_numpy_arrays>`
 * random module
+* String processing.
+* File operations.
+* Requests.
 
 Week 11 notebook
 ~~~~~~~~~~~~~~~~
@@ -23,4 +26,4 @@ Week 11 notebook
 Sample quiz
 ~~~~~~~~~~~~~
 
-- Use last week quiz to prepare for the quiz.
+- :download:`Sample Quiz 9 <../Quizzes/quiz9/quiz9_sample.pdf>`
