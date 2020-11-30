@@ -13,3 +13,4 @@ Projects
 	Tartans <Projects/tartans/tartans>
 	Epidemic <Projects/epidemic/epidemic>
 	Decryption <Projects/message_decrypt/message_decrypt>
+	Page rank <Projects/pagerank/pagerank>
