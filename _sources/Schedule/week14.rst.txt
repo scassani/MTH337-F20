@@ -1,19 +1,20 @@
-Week 14: Apr 25 - Apr 29
+Week 14: Nov 30 - Dec 4
 ========================
 
 Project 7
 ~~~~~~~~~
 
-* :doc:`Computing with text </Projects/computing_with_text/computing_with_text>`
+* :doc:`Page Rank </Projects/pagerank/pagerank>`
 
 
 Python
 ~~~~~~
 
 * Sets
+* Dictionary
 
 Week 14 notebook
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 - `View online <../_static/week14_in_class.html>`_
 - `Download  <../_static/week14_in_class.ipynb>`_ (Right click on the link and choose 'save link as...'. After downloading put it in the directory where you keep your Jupyter notebooks).
@@ -21,4 +22,4 @@ Week 14 notebook
 Sample quiz
 ~~~~~~~~~~~~~
 
-- * :download:`Sample Quiz 10 <../Quizzes/quiz10_sample.pdf>`
+NO quiz
